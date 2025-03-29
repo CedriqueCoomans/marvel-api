@@ -13,147 +13,182 @@
       "title": "The Incredible Hulk",
       "release_date": "2008-06-13",
       "phase": "1",
-      "description": "Bruce Banner becomes the Hulk as he searches for a cure while on the run from the military."
+      "description": "Bruce Banner becomes the Hulk as he searches for a cure while on the run from the military.",
+      "image": "hulk.jpg"
     },
     {
       "id": 3,
       "title": "Iron Man 2",
       "release_date": "2010-05-07",
       "phase": "1",
-      "description": "Tony Stark faces new enemies and government pressure as he continues his superhero journey."
+      "description": "Tony Stark faces new enemies and government pressure as he continues his superhero journey.",
+      "image": "ironman2.jpg"
     },
     {
       "id": 4,
       "title": "Thor",
       "release_date": "2011-05-06",
       "phase": "1",
-      "description": "Thor, the god of thunder, is banished to Earth and must prove himself worthy."
+      "description": "Thor, the god of thunder, is banished to Earth and must prove himself worthy.",
+      "image": "thor.jpg"
     },
     {
       "id": 5,
       "title": "Captain America: The First Avenger",
       "release_date": "2011-07-22",
       "phase": "1",
-      "description": "Steve Rogers becomes Captain America to fight in WWII and face the Red Skull."
+      "description": "Steve Rogers becomes Captain America to fight in WWII and face the Red Skull.",
+      "image": "captain_america.jpg"
     },
     {
       "id": 6,
       "title": "The Avengers",
       "release_date": "2012-05-04",
       "phase": "1",
-      "description": "Earth's mightiest heroes team up to stop Loki and an alien invasion."
+      "description": "Earth's mightiest heroes team up to stop Loki and an alien invasion.",
+      "image": "avengers.jpg"
     },
     {
       "id": 7,
       "title": "Iron Man 3",
       "release_date": "2013-05-03",
       "phase": "2",
-      "description": "Tony Stark faces PTSD and a mysterious terrorist known as the Mandarin."
+      "description": "Tony Stark faces PTSD and a mysterious terrorist known as the Mandarin.",
+      "image": "ironman3.jpg"
     },
     {
       "id": 8,
       "title": "Thor: The Dark World",
       "release_date": "2013-11-08",
       "phase": "2",
-      "description": "Thor must stop Malekith from plunging the universe into darkness."
+      "description": "Thor must stop Malekith from plunging the universe into darkness.",
+      "image": "the_dark_world.jpg"
     },
     {
       "id": 9,
       "title": "Captain America: The Winter Soldier",
       "release_date": "2014-04-04",
       "phase": "2",
-      "description": "Captain America uncovers a conspiracy and faces a ghost from his past."
+      "description": "Captain America uncovers a conspiracy and faces a ghost from his past.",
+      "image": "the_winter_soldier.jpg"
     },
     {
       "id": 10,
       "title": "Guardians of the Galaxy",
       "release_date": "2014-08-01",
       "phase": "2",
-      "description": "A group of misfits team up to protect a powerful orb from falling into the wrong hands."
+      "description": "A group of misfits team up to protect a powerful orb from falling into the wrong hands.",
+      "image": "guardians_of_the_galaxy.jpg"
     }
   ],
-  "characters": [
-    {
-      "id": 1,
-      "name": "Tony Stark / Iron Man",
-      "film_id": 1,
-      "role": "hero",
-      "planet": "Earth",
-      "actor": "Robert Downey Jr."
-    },
-    {
-      "id": 2,
-      "name": "Bruce Banner / Hulk",
-      "film_id": 2,
-      "role": "hero",
-      "planet": "Earth",
-      "actor": "Edward Norton"
-    },
-    {
-      "id": 3,
-      "name": "Thor",
-      "film_id": 4,
-      "role": "hero",
-      "planet": "Asgard",
-      "actor": "Chris Hemsworth"
-    },
-    {
-      "id": 4,
-      "name": "Steve Rogers / Captain America",
-      "film_id": 5,
-      "role": "hero",
-      "planet": "Earth",
-      "actor": "Chris Evans"
-    },
-    {
-      "id": 5,
-      "name": "Natasha Romanoff / Black Widow",
-      "film_id": 6,
-      "role": "hero",
-      "planet": "Earth",
-      "actor": "Scarlett Johansson"
-    },
-    {
-      "id": 6,
-      "name": "Loki",
-      "film_id": 4,
-      "role": "villain",
-      "planet": "Jotunheim",
-      "actor": "Tom Hiddleston"
-    },
-    {
-      "id": 7,
-      "name": "Red Skull",
-      "film_id": 5,
-      "role": "villain",
-      "planet": "Earth",
-      "actor": "Hugo Weaving"
-    },
-    {
-      "id": 8,
-      "name": "Obadiah Stane / Iron Monger",
-      "film_id": 1,
-      "role": "villain",
-      "planet": "Earth",
-      "actor": "Jeff Bridges"
-    },
-    {
-      "id": 9,
-      "name": "Drax the Destroyer",
-      "film_id": 10,
-      "role": "hero",
-      "planet": "Kylos",
-      "actor": "Dave Bautista"
-    },
-    {
-      "id": 10,
-      "name": "Gamora",
-      "film_id": 10,
-      "role": "hero",
-      "planet": "Zen-Whoberi",
-      "actor": "Zoe Saldaña"
-    }
-  ],
+"characters": [
+  {
+    "id": 1,
+    "name": "Tony Stark / Iron Man",
+    "role": "hero",
+    "planet": "Earth",
+    "actor": "Robert Downey Jr.",
+    "movie_ids": [
+      1,
+      3,
+      6
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bruce Banner / Hulk",
+    "role": "hero",
+    "planet": "Earth",
+    "actor": "Edward Norton",
+    "movie_ids": [
+      2,
+      6
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Thor",
+    "role": "hero",
+    "planet": "Asgard",
+    "actor": "Chris Hemsworth",
+    "movie_ids": [
+      4,
+      6
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Steve Rogers / Captain America",
+    "role": "hero",
+    "planet": "Earth",
+    "actor": "Chris Evans",
+    "movie_ids": [
+      5,
+      6
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Natasha Romanoff / Black Widow",
+    "role": "hero",
+    "planet": "Earth",
+    "actor": "Scarlett Johansson",
+    "movie_ids": [
+      6
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Loki",
+    "role": "villain",
+    "planet": "Jotunheim",
+    "actor": "Tom Hiddleston",
+    "movie_ids": [
+      4,
+      6
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Red Skull",
+    "role": "villain",
+    "planet": "Earth",
+    "actor": "Hugo Weaving",
+    "movie_ids": [
+      5
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Obadiah Stane / Iron Monger",
+    "role": "villain",
+    "planet": "Earth",
+    "actor": "Jeff Bridges",
+    "movie_ids": [
+      1
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Drax the Destroyer",
+    "role": "hero",
+    "planet": "Kylos",
+    "actor": "Dave Bautista",
+    "movie_ids": [
+      10
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Gamora",
+    "role": "hero",
+    "planet": "Zen-Whoberi",
+    "actor": "Zoe Saldaña",
+    "movie_ids": [
+      10
+    ]
+  }
+],
   "planets": [
     {
       "id": 1,

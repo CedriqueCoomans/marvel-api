@@ -5,17 +5,20 @@ app = Flask(__name__)
 
 BASE_URL = "https://my-json-server.typicode.com/CedriqueCoomans/marvel-api"
 
+
+# ===================== HOME =====================
 @app.route("/")
 def home():
     return render_template("home.html")
 
 
-# FILMS
+# ===================== FILMS =====================
 @app.route("/films")
 def show_films():
     response = requests.get(f"{BASE_URL}/movies")
     films = response.json() if response.status_code == 200 else []
     return render_template("films.html", films=films)
+
 
 @app.route("/films/<int:film_id>")
 def film_detail(film_id):
@@ -25,13 +28,13 @@ def film_detail(film_id):
     film = film_res.json() if film_res.status_code == 200 else None
     characters = char_res.json() if char_res.status_code == 200 else []
 
+    # Filter characters that appear in this film
     film_characters = [char for char in characters if char["film_id"] == film_id]
 
     return render_template("film_detail.html", film=film, characters=film_characters)
 
 
-
-# CHARACTERS
+# ===================== CHARACTERS =====================
 @app.route("/characters")
 def all_characters():
     response = requests.get(f"{BASE_URL}/characters")
@@ -47,20 +50,22 @@ def character_detail(type, char_id):
     characters = character_res.json() if character_res.status_code == 200 else []
     films = film_res.json() if film_res.status_code == 200 else []
 
+    # Zoek juiste character met rol
     character = next((char for char in characters if char["id"] == char_id and char["role"] == type), None)
+
+    # Zoek bijhorende film
     film = next((f for f in films if f["id"] == character["film_id"]), None) if character else None
 
     return render_template("character_detail.html", character=character, film=film)
 
 
-
-
-# PLANETS
+# ===================== PLANETS =====================
 @app.route("/planets")
 def show_planets():
     response = requests.get(f"{BASE_URL}/planets")
     planets = response.json() if response.status_code == 200 else []
     return render_template("planets.html", planets=planets)
+
 
 @app.route("/planets/<int:planet_id>")
 def planet_detail(planet_id):
@@ -69,5 +74,6 @@ def planet_detail(planet_id):
     return render_template("planet_detail.html", planet=planet)
 
 
+# ===================== MAIN =====================
 if __name__ == "__main__":
     app.run(debug=True)

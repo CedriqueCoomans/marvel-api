@@ -3,19 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Marvel Planeten</title>
+    <title>Marvel Planets</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
+    <!-- Terug naar home -->
     <a href="/" class="back-home">← Home</a>
 
-    <h1>Marvel Planeten</h1>
+    <h1>Marvel Planets</h1>
 
+    <!-- Overzicht van planeten -->
     <div class="planet-grid">
         {% for planet in planets %}
         <div class="planet-card">
-            <h2><a href="/planets/{{ planet.id }}">{{ planet.name }}</a></h2>
+            <h2>
+                <a href="/planets/{{ planet.id }}">{{ planet.name }}</a>
+            </h2>
         </div>
         {% endfor %}
     </div>
