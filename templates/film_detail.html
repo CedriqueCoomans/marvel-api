@@ -13,12 +13,28 @@
     <h1>{{ film.title }}</h1>
 
     <div class="film-detail">
-        <p><strong>Release datum:</strong> {{ film.release_date }}</p>
+        <p><strong>Release date:</strong> {{ film.release_date }}</p>
         <p><strong>Phase:</strong> {{ film.phase }}</p>
+        <p><strong>Description:</strong> {{ film.description }}</p>
+
+        {% if characters %}
+        <div class="character-list">
+            <h3>Characters in this movie:</h3>
+            <ul>
+                {% for character in characters %}
+                <li>
+                    <a href="/characters/{{ character.role }}s/{{ character.id }}">
+                        {{ character.name }}
+                    </a> ({{ character.role | capitalize }})
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
     </div>
 
     <br>
-    <a href="/films">← Terug naar overzicht</a>
+    <a href="/films">← Back to overview</a>
 
 </body>
 

@@ -3,26 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>Marvel Characters</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
     <a href="/" class="back-home">← Home</a>
 
-    <h1>{{ title }}</h1>
+    <h1>Marvel Characters</h1>
 
     <div class="character-grid">
         {% for character in characters %}
         <div class="character-card">
             <h2>{{ character.name }}</h2>
-            <p><strong>Planeet:</strong> {{ character.planet }}</p>
-
-            {% if type == "all" %}
-            <p><strong>Rol:</strong> {{ character.role | capitalize }}</p>
-            {% endif %}
-
-            <a href="/characters/{{ character.role }}/{{ character.id }}">Bekijk details →</a>
+            <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
+            <p><strong>Planet:</strong> {{ character.planet }}</p>
+            <a href="/characters/{{ character.role }}s/{{ character.id }}">More info →</a>
         </div>
         {% endfor %}
     </div>

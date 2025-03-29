@@ -8,24 +8,17 @@
 </head>
 
 <body>
-
     <a href="/" class="back-home">← Home</a>
 
     <h1>{{ character.name }}</h1>
 
     <div class="character-detail">
-        <p><strong>Rol:</strong> {{ character.role | capitalize }}</p>
-        <p><strong>Planeet:</strong> {{ character.planet }}</p>
+        <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
+        <p><strong>Planet:</strong> {{ character.planet }}</p>
     </div>
 
     <br>
-    {% if character.role == 'hero' %}
-    <a href="/characters/heroes">← Terug naar overzicht</a>
-    {% elif character.role == 'villain' %}
-    <a href="/characters/villains">← Terug naar overzicht</a>
-    {% else %}
-    <a href="/characters">← Terug naar overzicht</a>
-    {% endif %}
+    <a href="/characters">← Back to all characters</a>
 
 </body>
 

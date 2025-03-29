@@ -229,3 +229,32 @@ a:hover {
     text-align: center;
     font-size: 18px;
 }
+/* =============== CHARACTERS IN FILM DETAIL =============== */
+.film-detail .character-list {
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.film-detail .character-list h3 {
+    margin-bottom: 10px;
+    color: #e62429;
+}
+
+.film-detail .character-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.film-detail .character-list li {
+    margin-bottom: 8px;
+}
+
+.film-detail .character-list a {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.film-detail .character-list a:hover {
+    text-decoration: underline;
+}

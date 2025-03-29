@@ -77,70 +77,80 @@
       "name": "Tony Stark / Iron Man",
       "film_id": 1,
       "role": "hero",
-      "planet": "Earth"
+      "planet": "Earth",
+      "actor": "Robert Downey Jr."
     },
     {
       "id": 2,
       "name": "Bruce Banner / Hulk",
       "film_id": 2,
       "role": "hero",
-      "planet": "Earth"
+      "planet": "Earth",
+      "actor": "Edward Norton"
     },
     {
       "id": 3,
       "name": "Thor",
       "film_id": 4,
       "role": "hero",
-      "planet": "Asgard"
+      "planet": "Asgard",
+      "actor": "Chris Hemsworth"
     },
     {
       "id": 4,
       "name": "Steve Rogers / Captain America",
       "film_id": 5,
       "role": "hero",
-      "planet": "Earth"
+      "planet": "Earth",
+      "actor": "Chris Evans"
     },
     {
       "id": 5,
       "name": "Natasha Romanoff / Black Widow",
       "film_id": 6,
       "role": "hero",
-      "planet": "Earth"
+      "planet": "Earth",
+      "actor": "Scarlett Johansson"
     },
     {
       "id": 6,
       "name": "Loki",
       "film_id": 4,
       "role": "villain",
-      "planet": "Jotunheim"
+      "planet": "Jotunheim",
+      "actor": "Tom Hiddleston"
     },
     {
       "id": 7,
       "name": "Red Skull",
       "film_id": 5,
       "role": "villain",
-      "planet": "Earth"
+      "planet": "Earth",
+      "actor": "Hugo Weaving"
     },
     {
       "id": 8,
       "name": "Obadiah Stane / Iron Monger",
       "film_id": 1,
       "role": "villain",
-      "planet": "Earth"
+      "planet": "Earth",
+      "actor": "Jeff Bridges"
     },
     {
       "id": 9,
       "name": "Drax the Destroyer",
       "film_id": 10,
       "role": "hero",
-      "planet": "Kylos"
+      "planet": "Kylos",
+      "actor": "Dave Bautista"
     },
     {
       "id": 10,
       "name": "Gamora",
       "film_id": 10,
       "role": "hero",
-      "planet": "Zen-Whoberi"
+      "planet": "Zen-Whoberi",
+      "actor": "Zoe Saldaña"
     }
   ],
   "planets": [
