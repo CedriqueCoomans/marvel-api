@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
+    <a href="/" class="back-home">← Home</a>
+
     <h1>{{ title }}</h1>
 
-    <ul>
+    <div class="character-grid">
         {% for character in characters %}
-        <li>
-            <a href="/characters/{{ type }}/{{ character.id }}">{{ character.name }}</a>
-            – Planeet: {{ character.planet }}
-        </li>
+        <div class="character-card">
+            <h2>{{ character.name }}</h2>
+            <p><strong>Planeet:</strong> {{ character.planet }}</p>
+            <a href="/characters/{{ type }}/{{ character.id }}">Bekijk details →</a>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 
-    <br>
-    <a href="/">← Terug naar films</a>
 </body>
 
 </html>

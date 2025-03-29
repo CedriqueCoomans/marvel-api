@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ planet.name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
+    <a href="/" class="back-home">← Home</a>
+
     <h1>{{ planet.name }}</h1>
 
-    <img src="/static/images/{{ planet.image or 'placeholder.jpg' }}" alt="{{ planet.name }}" width="300">
+    <div class="planet-detail">
+        <p>Welkom op de planeet <strong>{{ planet.name }}</strong> uit het Marvel-universum.</p>
+    </div>
 
-    <br><br>
+    <br>
     <a href="/planets">← Terug naar overzicht</a>
+
 </body>
 
 </html>

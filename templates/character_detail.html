@@ -4,18 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ character.name }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
+    <a href="/" class="back-home">← Home</a>
+
     <h1>{{ character.name }}</h1>
 
-    <p><strong>Rol:</strong> {{ character.role | capitalize }}</p>
-    <p><strong>Planeet:</strong> {{ character.planet }}</p>
+    <div class="character-detail">
+        <p><strong>Rol:</strong> {{ character.role | capitalize }}</p>
+        <p><strong>Planeet:</strong> {{ character.planet }}</p>
+    </div>
 
-    <img src="/static/images/{{ character.image or 'placeholder.jpg' }}" alt="{{ character.name }}" width="300">
-
-    <br><br>
+    <br>
     <a href="/{{ character.role }}s">← Terug naar overzicht</a>
+
 </body>
 
 </html>

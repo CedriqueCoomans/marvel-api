@@ -7,6 +7,10 @@ BASE_URL = "https://my-json-server.typicode.com/CedriqueCoomans/marvel-api"
 
 @app.route("/")
 def home():
+    return render_template("home.html")
+
+@app.route("/films")
+def show_films():
     response = requests.get(f"{BASE_URL}/films")
     films = response.json() if response.status_code == 200 else []
     return render_template("films.html", films=films)
@@ -29,21 +33,18 @@ def show_planets():
     planets = response.json() if response.status_code == 200 else []
     return render_template("planets.html", planets=planets)
 
-# 🎯 Detailpagina per held/schurk
 @app.route("/characters/<string:type>/<int:char_id>")
 def character_detail(type, char_id):
     response = requests.get(f"{BASE_URL}/{type}s/{char_id}")
     character = response.json() if response.status_code == 200 else None
     return render_template("character_detail.html", character=character)
 
-# 🌍 Detailpagina voor planeten
 @app.route("/planets/<int:planet_id>")
 def planet_detail(planet_id):
     response = requests.get(f"{BASE_URL}/planets/{planet_id}")
     planet = response.json() if response.status_code == 200 else None
     return render_template("planet_detail.html", planet=planet)
 
-# 🎬 Detailpagina voor films
 @app.route("/films/<int:film_id>")
 def film_detail(film_id):
     response = requests.get(f"{BASE_URL}/films/{film_id}")

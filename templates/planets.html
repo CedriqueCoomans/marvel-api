@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Marvel Planeten</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
+    <a href="/" class="back-home">← Home</a>
+
     <h1>Marvel Planeten</h1>
 
-    <ul>
+    <div class="planet-grid">
         {% for planet in planets %}
-        <li><a href="/planets/{{ planet.id }}">{{ planet.name }}</a></li>
+        <div class="planet-card">
+            <h2><a href="/planets/{{ planet.id }}">{{ planet.name }}</a></h2>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 
-    <br>
-    <a href="/">← Terug naar films</a>
 </body>
 
 </html>
