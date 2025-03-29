@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel Planeten</title>
+</head>
+
+<body>
+    <h1>Marvel Planeten</h1>
+
+    <ul>
+        {% for planet in planets %}
+        <li><a href="/planets/{{ planet.id }}">{{ planet.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="/">← Terug naar films</a>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ planet.name }}</title>
+</head>
+
+<body>
+    <h1>{{ planet.name }}</h1>
+
+    <img src="/static/images/{{ planet.image or 'placeholder.jpg' }}" alt="{{ planet.name }}" width="300">
+
+    <br><br>
+    <a href="/planets">← Terug naar overzicht</a>
+</body>
+
+</html>

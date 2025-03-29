@@ -442,43 +442,53 @@
     "planets": [
         {
             "id": 1,
-            "name": "Asgard"
+            "name": "Asgard",
+            "image": "asgard.jpg"
         },
         {
             "id": 2,
-            "name": "Dark Dimension"
+            "name": "Dark Dimension",
+            "image": "dark_dimension.jpg"
         },
         {
             "id": 3,
-            "name": "Earth"
+            "name": "Earth",
+            "image": "earth.jpg"
         },
         {
             "id": 4,
-            "name": "Halfworld"
+            "name": "Halfworld",
+            "image": "halfworld.jpg"
         },
         {
             "id": 5,
-            "name": "Jotunheim"
+            "name": "Jotunheim",
+            "image": "jotunheim.jpg"
         },
         {
             "id": 6,
-            "name": "Kree Empire"
+            "name": "Kree Empire",
+            "image": "kree_empire.jpg"
         },
         {
             "id": 7,
-            "name": "Kylos"
+            "name": "Kylos",
+            "image": "kylos.jpg"
         },
         {
             "id": 8,
-            "name": "Planet X"
+            "name": "Planet X",
+            "image": "planet_x.jpg"
         },
         {
             "id": 9,
-            "name": "Titan"
+            "name": "Titan",
+            "image": "titan.jpg"
         },
         {
             "id": 10,
-            "name": "Zen-Whoberi"
+            "name": "Zen-Whoberi",
+            "image": "zen_whoberi.jpg"
         }
     ]
 }

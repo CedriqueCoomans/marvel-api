@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ film.title }}</title>
+</head>
+
+<body>
+    <h1>{{ film.title }}</h1>
+
+    <p><strong>Release Date:</strong> {{ film.release_date }}</p>
+    <p><strong>Phase:</strong> {{ film.phase }}</p>
+
+    {% if film.image %}
+    <img src="/static/images/{{ film.image }}" alt="{{ film.title }}" width="300">
+    {% else %}
+    <img src="/static/images/placeholder.jpg" alt="No image available" width="300">
+    {% endif %}
+
+    <br><br>
+    <a href="/">← Terug naar films</a>
+</body>
+
+</html>

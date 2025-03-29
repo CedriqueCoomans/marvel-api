@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel Films</title>
+</head>
+
+<body>
+    <h1>Marvel Films</h1>
+    <ul>
+        {% for film in films %}
+        <li>
+            <a href="/films/{{ film.id }}">{{ film.title }}</a>
+            ({{ film.release_date }}) – Phase {{ film.phase }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <hr>
+    <a href="/heroes">Bekijk Helden</a><br>
+    <a href="/villains">Bekijk Schurken</a><br>
+    <a href="/planets">Bekijk Planeten</a>
+</body>
+
+</html>

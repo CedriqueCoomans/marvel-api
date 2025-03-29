@@ -3,23 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Game of Thrones Personages</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <title>{{ title }}</title>
 </head>
 
 <body>
-    <h1>Game of Thrones Personages</h1>
+    <h1>{{ title }}</h1>
+
     <ul>
         {% for character in characters %}
         <li>
-            <a href="/characters/{{ character.id }}">
-                <strong>{{ character.name }}</strong>
-            </a> van huis {{ character.house }}<br>
-            Rol: {{ character.role }}<br>
-            Status: {{ character.status }}
+            <a href="/characters/{{ type }}/{{ character.id }}">{{ character.name }}</a>
+            – Planeet: {{ character.planet }}
         </li>
         {% endfor %}
     </ul>
+
+    <br>
+    <a href="/">← Terug naar films</a>
 </body>
 
 </html>

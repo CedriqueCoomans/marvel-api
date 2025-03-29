@@ -3,16 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>{{ character.name }} – Detail</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <title>{{ character.name }}</title>
 </head>
 
 <body>
     <h1>{{ character.name }}</h1>
-    <p><strong>Huis:</strong> {{ character.house }}</p>
-    <p><strong>Rol:</strong> {{ character.role }}</p>
-    <p><strong>Status:</strong> {{ character.status }}</p>
-    <a href="/">← Terug naar overzicht</a>
+
+    <p><strong>Rol:</strong> {{ character.role | capitalize }}</p>
+    <p><strong>Planeet:</strong> {{ character.planet }}</p>
+
+    <img src="/static/images/{{ character.image or 'placeholder.jpg' }}" alt="{{ character.name }}" width="300">
+
+    <br><br>
+    <a href="/{{ character.role }}s">← Terug naar overzicht</a>
 </body>
 
 </html>
