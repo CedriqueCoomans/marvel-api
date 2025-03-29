@@ -1,0 +1,484 @@
+{
+    "films": [
+        {
+            "id": 1,
+            "title": "Iron Man",
+            "release_date": "2008-05-02",
+            "phase": "1",
+            "type": "film"
+        },
+        {
+            "id": 2,
+            "title": "The Incredible Hulk",
+            "release_date": "2008-06-13",
+            "phase": "1",
+            "type": "film"
+        },
+        {
+            "id": 3,
+            "title": "Iron Man 2",
+            "release_date": "2010-05-07",
+            "phase": "1",
+            "type": "film"
+        },
+        {
+            "id": 4,
+            "title": "Thor",
+            "release_date": "2011-05-06",
+            "phase": "1",
+            "type": "film"
+        },
+        {
+            "id": 5,
+            "title": "Captain America: The First Avenger",
+            "release_date": "2011-07-22",
+            "phase": "1",
+            "type": "film"
+        },
+        {
+            "id": 6,
+            "title": "The Avengers",
+            "release_date": "2012-05-04",
+            "phase": "1",
+            "type": "film"
+        },
+        {
+            "id": 7,
+            "title": "Iron Man 3",
+            "release_date": "2013-05-03",
+            "phase": "2",
+            "type": "film"
+        },
+        {
+            "id": 8,
+            "title": "Thor: The Dark World",
+            "release_date": "2013-11-08",
+            "phase": "2",
+            "type": "film"
+        },
+        {
+            "id": 9,
+            "title": "Captain America: The Winter Soldier",
+            "release_date": "2014-04-04",
+            "phase": "2",
+            "type": "film"
+        },
+        {
+            "id": 10,
+            "title": "Guardians of the Galaxy",
+            "release_date": "2014-08-01",
+            "phase": "2",
+            "type": "film"
+        },
+        {
+            "id": 11,
+            "title": "Avengers: Age of Ultron",
+            "release_date": "2015-05-01",
+            "phase": "2",
+            "type": "film"
+        },
+        {
+            "id": 12,
+            "title": "Ant-Man",
+            "release_date": "2015-07-17",
+            "phase": "2",
+            "type": "film"
+        },
+        {
+            "id": 13,
+            "title": "Captain America: Civil War",
+            "release_date": "2016-05-06",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 14,
+            "title": "Doctor Strange",
+            "release_date": "2016-11-04",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 15,
+            "title": "Guardians of the Galaxy Vol. 2",
+            "release_date": "2017-05-05",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 16,
+            "title": "Spider-Man: Homecoming",
+            "release_date": "2017-07-07",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 17,
+            "title": "Thor: Ragnarok",
+            "release_date": "2017-11-03",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 18,
+            "title": "Black Panther",
+            "release_date": "2018-02-16",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 19,
+            "title": "Avengers: Infinity War",
+            "release_date": "2018-04-27",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 20,
+            "title": "Ant-Man and the Wasp",
+            "release_date": "2018-07-06",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 21,
+            "title": "Captain Marvel",
+            "release_date": "2019-03-08",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 22,
+            "title": "Avengers: Endgame",
+            "release_date": "2019-04-26",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 23,
+            "title": "Spider-Man: Far From Home",
+            "release_date": "2019-07-02",
+            "phase": "3",
+            "type": "film"
+        },
+        {
+            "id": 24,
+            "title": "Black Widow",
+            "release_date": "2021-07-09",
+            "phase": "4",
+            "type": "film"
+        },
+        {
+            "id": 25,
+            "title": "Shang-Chi and the Legend of the Ten Rings",
+            "release_date": "2021-09-03",
+            "phase": "4",
+            "type": "film"
+        },
+        {
+            "id": 26,
+            "title": "Eternals",
+            "release_date": "2021-11-05",
+            "phase": "4",
+            "type": "film"
+        },
+        {
+            "id": 27,
+            "title": "Spider-Man: No Way Home",
+            "release_date": "2021-12-17",
+            "phase": "4",
+            "type": "film"
+        },
+        {
+            "id": 28,
+            "title": "Doctor Strange in the Multiverse of Madness",
+            "release_date": "2022-05-06",
+            "phase": "4",
+            "type": "film"
+        },
+        {
+            "id": 29,
+            "title": "Thor: Love and Thunder",
+            "release_date": "2022-07-08",
+            "phase": "4",
+            "type": "film"
+        },
+        {
+            "id": 30,
+            "title": "Black Panther: Wakanda Forever",
+            "release_date": "2022-11-11",
+            "phase": "4",
+            "type": "film"
+        }
+    ],
+    "heroes": [
+        {
+            "id": 1,
+            "name": "Tony Stark / Iron Man",
+            "film_id": 1,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 2,
+            "name": "Steve Rogers / Captain America",
+            "film_id": 5,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 3,
+            "name": "Thor",
+            "film_id": 4,
+            "role": "hero",
+            "planet": "Asgard"
+        },
+        {
+            "id": 4,
+            "name": "Bruce Banner / Hulk",
+            "film_id": 2,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 5,
+            "name": "T'Challa / Black Panther",
+            "film_id": 18,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 6,
+            "name": "Peter Parker / Spider-Man",
+            "film_id": 16,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 7,
+            "name": "Stephen Strange / Doctor Strange",
+            "film_id": 14,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 8,
+            "name": "Carol Danvers / Captain Marvel",
+            "film_id": 21,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 9,
+            "name": "Peter Quill / Star-Lord",
+            "film_id": 10,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 10,
+            "name": "Natasha Romanoff / Black Widow",
+            "film_id": 6,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 11,
+            "name": "Wanda Maximoff / Scarlet Witch",
+            "film_id": 11,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 12,
+            "name": "Vision",
+            "film_id": 11,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 13,
+            "name": "Sam Wilson / Falcon",
+            "film_id": 13,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 14,
+            "name": "Scott Lang / Ant-Man",
+            "film_id": 12,
+            "role": "hero",
+            "planet": "Earth"
+        },
+        {
+            "id": 15,
+            "name": "Groot",
+            "film_id": 10,
+            "role": "hero",
+            "planet": "Planet X"
+        },
+        {
+            "id": 16,
+            "name": "Rocket Raccoon",
+            "film_id": 10,
+            "role": "hero",
+            "planet": "Halfworld"
+        },
+        {
+            "id": 17,
+            "name": "Gamora",
+            "film_id": 10,
+            "role": "hero",
+            "planet": "Zen-Whoberi"
+        },
+        {
+            "id": 18,
+            "name": "Drax the Destroyer",
+            "film_id": 10,
+            "role": "hero",
+            "planet": "Kylos"
+        }
+    ],
+    "villains": [
+        {
+            "id": 1,
+            "name": "Thanos",
+            "film_id": 19,
+            "role": "villain",
+            "planet": "Titan"
+        },
+        {
+            "id": 2,
+            "name": "Loki",
+            "film_id": 4,
+            "role": "villain",
+            "planet": "Jotunheim"
+        },
+        {
+            "id": 3,
+            "name": "Ultron",
+            "film_id": 11,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 4,
+            "name": "Red Skull",
+            "film_id": 5,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 5,
+            "name": "Hela",
+            "film_id": 17,
+            "role": "villain",
+            "planet": "Asgard"
+        },
+        {
+            "id": 6,
+            "name": "Killmonger",
+            "film_id": 18,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 7,
+            "name": "Green Goblin",
+            "film_id": 27,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 8,
+            "name": "Dormammu",
+            "film_id": 14,
+            "role": "villain",
+            "planet": "Dark Dimension"
+        },
+        {
+            "id": 9,
+            "name": "Ronan the Accuser",
+            "film_id": 10,
+            "role": "villain",
+            "planet": "Kree Empire"
+        },
+        {
+            "id": 10,
+            "name": "Obadiah Stane / Iron Monger",
+            "film_id": 1,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 11,
+            "name": "Ivan Vanko / Whiplash",
+            "film_id": 3,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 12,
+            "name": "Kaecilius",
+            "film_id": 14,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 13,
+            "name": "Vulture",
+            "film_id": 16,
+            "role": "villain",
+            "planet": "Earth"
+        },
+        {
+            "id": 14,
+            "name": "Taskmaster",
+            "film_id": 24,
+            "role": "villain",
+            "planet": "Earth"
+        }
+    ],
+    "planets": [
+        {
+            "id": 1,
+            "name": "Asgard"
+        },
+        {
+            "id": 2,
+            "name": "Dark Dimension"
+        },
+        {
+            "id": 3,
+            "name": "Earth"
+        },
+        {
+            "id": 4,
+            "name": "Halfworld"
+        },
+        {
+            "id": 5,
+            "name": "Jotunheim"
+        },
+        {
+            "id": 6,
+            "name": "Kree Empire"
+        },
+        {
+            "id": 7,
+            "name": "Kylos"
+        },
+        {
+            "id": 8,
+            "name": "Planet X"
+        },
+        {
+            "id": 9,
+            "name": "Titan"
+        },
+        {
+            "id": 10,
+            "name": "Zen-Whoberi"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Thrones Personages</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1>Game of Thrones Personages</h1>
+    <ul>
+        {% for character in characters %}
+        <li>
+            <a href="/characters/{{ character.id }}">
+                <strong>{{ character.name }}</strong>
+            </a> van huis {{ character.house }}<br>
+            Rol: {{ character.role }}<br>
+            Status: {{ character.status }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
