@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <a href="/" class="back-home">← Home</a>
 
     <h1>{{ character.name }}</h1>
@@ -18,7 +19,13 @@
     </div>
 
     <br>
-    <a href="/{{ character.role }}s">← Terug naar overzicht</a>
+    {% if character.role == 'hero' %}
+    <a href="/characters/heroes">← Terug naar overzicht</a>
+    {% elif character.role == 'villain' %}
+    <a href="/characters/villains">← Terug naar overzicht</a>
+    {% else %}
+    <a href="/characters">← Terug naar overzicht</a>
+    {% endif %}
 
 </body>
 

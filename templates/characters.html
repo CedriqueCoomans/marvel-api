@@ -17,7 +17,12 @@
         <div class="character-card">
             <h2>{{ character.name }}</h2>
             <p><strong>Planeet:</strong> {{ character.planet }}</p>
-            <a href="/characters/{{ type }}/{{ character.id }}">Bekijk details →</a>
+
+            {% if type == "all" %}
+            <p><strong>Rol:</strong> {{ character.role | capitalize }}</p>
+            {% endif %}
+
+            <a href="/characters/{{ character.role }}/{{ character.id }}">Bekijk details →</a>
         </div>
         {% endfor %}
     </div>

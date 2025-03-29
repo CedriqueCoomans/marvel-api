@@ -9,35 +9,41 @@ BASE_URL = "https://my-json-server.typicode.com/CedriqueCoomans/marvel-api"
 def home():
     return render_template("home.html")
 
+
+# 🎬 FILMS
 @app.route("/films")
 def show_films():
-    response = requests.get(f"{BASE_URL}/films")
+    response = requests.get(f"{BASE_URL}/movies")
     films = response.json() if response.status_code == 200 else []
     return render_template("films.html", films=films)
 
-@app.route("/heroes")
-def show_heroes():
-    response = requests.get(f"{BASE_URL}/heroes")
-    heroes = response.json() if response.status_code == 200 else []
-    return render_template("characters.html", characters=heroes, title="Marvel Helden", type="hero")
+@app.route("/films/<int:film_id>")
+def film_detail(film_id):
+    response = requests.get(f"{BASE_URL}/movies/{film_id}")
+    film = response.json() if response.status_code == 200 else None
+    return render_template("film_detail.html", film=film)
 
-@app.route("/villains")
-def show_villains():
-    response = requests.get(f"{BASE_URL}/villains")
-    villains = response.json() if response.status_code == 200 else []
-    return render_template("characters.html", characters=villains, title="Marvel Schurken", type="villain")
 
+# 🦸 CHARACTERS
+@app.route("/characters")
+def show_characters():
+    response = requests.get(f"{BASE_URL}/characters")
+    characters = response.json() if response.status_code == 200 else []
+    return render_template("characters.html", characters=characters, title="Marvel Characters")
+
+@app.route("/characters/<int:char_id>")
+def character_detail(char_id):
+    response = requests.get(f"{BASE_URL}/characters/{char_id}")
+    character = response.json() if response.status_code == 200 else None
+    return render_template("character_detail.html", character=character)
+
+
+# 🪐 PLANETS
 @app.route("/planets")
 def show_planets():
     response = requests.get(f"{BASE_URL}/planets")
     planets = response.json() if response.status_code == 200 else []
     return render_template("planets.html", planets=planets)
-
-@app.route("/characters/<string:type>/<int:char_id>")
-def character_detail(type, char_id):
-    response = requests.get(f"{BASE_URL}/{type}s/{char_id}")
-    character = response.json() if response.status_code == 200 else None
-    return render_template("character_detail.html", character=character)
 
 @app.route("/planets/<int:planet_id>")
 def planet_detail(planet_id):
@@ -45,11 +51,6 @@ def planet_detail(planet_id):
     planet = response.json() if response.status_code == 200 else None
     return render_template("planet_detail.html", planet=planet)
 
-@app.route("/films/<int:film_id>")
-def film_detail(film_id):
-    response = requests.get(f"{BASE_URL}/films/{film_id}")
-    film = response.json() if response.status_code == 200 else None
-    return render_template("film_detail.html", film=film)
 
 if __name__ == "__main__":
     app.run(debug=True)
