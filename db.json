@@ -5,7 +5,8 @@
       "title": "Iron Man",
       "release_date": "2008-05-02",
       "phase": "1",
-      "description": "Tony Stark builds a high-tech suit of armor to fight injustice after escaping captivity."
+      "description": "Tony Stark builds a high-tech suit of armor to fight injustice after escaping captivity.",
+      "image": "ironman.jpg"
     },
     {
       "id": 2,

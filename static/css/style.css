@@ -12,10 +12,7 @@ h1 {
     font-size: 48px;
     margin: 30px 0;
     color: #e62429;
-}
-
-li {
-    margin-bottom: 10px;
+    /* Marvel rood */
 }
 
 a {
@@ -73,7 +70,6 @@ a:hover {
     background: #e62429;
     color: white;
     padding: 12px 24px;
-    text-decoration: none;
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
@@ -114,7 +110,6 @@ a:hover {
     background: #e62429;
     padding: 8px 14px;
     border-radius: 6px;
-    text-decoration: none;
     font-size: 14px;
 }
 
@@ -132,6 +127,31 @@ a:hover {
     border-radius: 12px;
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
     color: #f1f1f1;
+}
+
+.film-detail .character-list {
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.film-detail .character-list h3 {
+    margin-bottom: 10px;
+    color: #e62429;
+}
+
+.film-detail .character-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.film-detail .character-list li {
+    margin-bottom: 8px;
+}
+
+.film-detail .character-list a {
+    color: #f1f1f1;
+    font-weight: bold;
 }
 
 /* =============== CHARACTER OVERZICHT =============== */
@@ -164,7 +184,6 @@ a:hover {
     background: #e62429;
     padding: 8px 14px;
     border-radius: 6px;
-    text-decoration: none;
     font-size: 14px;
 }
 
@@ -182,9 +201,10 @@ a:hover {
     border-radius: 12px;
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
     text-align: center;
+    font-size: 18px;
 }
 
-/* =============== PLANETEN OVERZICHT =============== */
+/* =============== PLANET OVERZICHT =============== */
 .planet-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -205,16 +225,16 @@ a:hover {
 
 .planet-card h2 {
     margin: 0;
+    color: #e62429;
 }
 
 .planet-card a {
-    color: #e62429;
-    font-size: 20px;
-    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .planet-card a:hover {
-    text-decoration: underline;
     transform: scale(1.05);
 }
 
@@ -228,33 +248,4 @@ a:hover {
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
     text-align: center;
     font-size: 18px;
-}
-/* =============== CHARACTERS IN FILM DETAIL =============== */
-.film-detail .character-list {
-    margin-top: 30px;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-}
-
-.film-detail .character-list h3 {
-    margin-bottom: 10px;
-    color: #e62429;
-}
-
-.film-detail .character-list ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.film-detail .character-list li {
-    margin-bottom: 8px;
-}
-
-.film-detail .character-list a {
-    color: #f1f1f1;
-    font-weight: bold;
-}
-
-.film-detail .character-list a:hover {
-    text-decoration: underline;
 }

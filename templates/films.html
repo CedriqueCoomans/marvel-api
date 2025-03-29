@@ -12,13 +12,17 @@
 
     <h1>Marvel Films</h1>
 
-    <ul class="film-list">
+    <div class="film-grid">
         {% for film in films %}
-        <li>
-            <a href="/films/{{ film.id }}">{{ film.title }}</a>
-        </li>
+        <div class="film-card">
+            {% if film.image %}
+            <img src="/static/images/{{ film.image }}" alt="{{ film.title }}" class="film-image">
+            {% endif %}
+            <h2>{{ film.title }}</h2>
+            <a href="/films/{{ film.id }}">More info →</a>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 
 </body>
 

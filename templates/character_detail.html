@@ -15,11 +15,15 @@
     <div class="character-detail">
         <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
         <p><strong>Planet:</strong> {{ character.planet }}</p>
+        <p><strong>Actor:</strong> {{ character.actor }}</p>
+
+        {% if film %}
+        <p><strong>Appears in:</strong> <a href="/films/{{ film.id }}">{{ film.title }}</a></p>
+        {% endif %}
     </div>
 
     <br>
     <a href="/characters">← Back to all characters</a>
-
 </body>
 
 </html>

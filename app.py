@@ -41,10 +41,17 @@ def all_characters():
 
 @app.route("/characters/<string:type>s/<int:char_id>")
 def character_detail(type, char_id):
-    response = requests.get(f"{BASE_URL}/characters")
-    characters = response.json() if response.status_code == 200 else []
+    character_res = requests.get(f"{BASE_URL}/characters")
+    film_res = requests.get(f"{BASE_URL}/movies")
+
+    characters = character_res.json() if character_res.status_code == 200 else []
+    films = film_res.json() if film_res.status_code == 200 else []
+
     character = next((char for char in characters if char["id"] == char_id and char["role"] == type), None)
-    return render_template("character_detail.html", character=character)
+    film = next((f for f in films if f["id"] == character["film_id"]), None) if character else None
+
+    return render_template("character_detail.html", character=character, film=film)
+
 
 
 

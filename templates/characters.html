@@ -16,13 +16,10 @@
         {% for character in characters %}
         <div class="character-card">
             <h2>{{ character.name }}</h2>
-            <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
-            <p><strong>Planet:</strong> {{ character.planet }}</p>
             <a href="/characters/{{ character.role }}s/{{ character.id }}">More info →</a>
         </div>
         {% endfor %}
     </div>
-
 </body>
 
 </html>
