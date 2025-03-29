@@ -13,7 +13,11 @@
     <h1>{{ film.title }}</h1>
 
     <div class="film-detail">
+
+        {% if film.image %}
         <img src="/static/images/{{ film.image }}" alt="{{ film.title }}" class="film-image">
+        {% endif %}
+
         <p><strong>Release date:</strong> {{ film.release_date }}</p>
         <p><strong>Phase:</strong> {{ film.phase }}</p>
         <p><strong>Description:</strong> {{ film.description }}</p>

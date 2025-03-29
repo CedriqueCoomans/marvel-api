@@ -161,6 +161,14 @@ a:hover {
     color: #f1f1f1;
     font-weight: bold;
 }
+.film-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
 
 /* =============== CHARACTER OVERZICHT =============== */
 .character-grid {
