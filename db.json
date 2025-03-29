@@ -69,406 +69,99 @@
       "release_date": "2014-08-01",
       "phase": "2",
       "description": "A group of misfits team up to protect a powerful orb from falling into the wrong hands."
-    },
-    {
-      "id": 11,
-      "title": "Avengers: Age of Ultron",
-      "release_date": "2015-05-01",
-      "phase": "2",
-      "description": "The Avengers must stop Ultron, an AI created by Tony Stark, from destroying humanity."
-    },
-    {
-      "id": 12,
-      "title": "Ant-Man",
-      "release_date": "2015-07-17",
-      "phase": "2",
-      "description": "Scott Lang becomes Ant-Man and must pull off a heist to save the world."
-    },
-    {
-      "id": 13,
-      "title": "Captain America: Civil War",
-      "release_date": "2016-05-06",
-      "phase": "3",
-      "description": "The Avengers are divided over government oversight, leading to a major conflict."
-    },
-    {
-      "id": 14,
-      "title": "Doctor Strange",
-      "release_date": "2016-11-04",
-      "phase": "3",
-      "description": "A surgeon becomes a sorcerer after a car accident leads him to the mystic arts."
-    },
-    {
-      "id": 15,
-      "title": "Guardians of the Galaxy Vol. 2",
-      "release_date": "2017-05-05",
-      "phase": "3",
-      "description": "The Guardians unravel the mystery of Peter Quill’s parentage."
-    },
-    {
-      "id": 16,
-      "title": "Spider-Man: Homecoming",
-      "release_date": "2017-07-07",
-      "phase": "3",
-      "description": "Peter Parker balances high school life and being Spider-Man under Tony Stark’s guidance."
-    },
-    {
-      "id": 17,
-      "title": "Thor: Ragnarok",
-      "release_date": "2017-11-03",
-      "phase": "3",
-      "description": "Thor must escape Sakaar and stop Ragnarok to save Asgard."
-    },
-    {
-      "id": 18,
-      "title": "Black Panther",
-      "release_date": "2018-02-16",
-      "phase": "3",
-      "description": "T’Challa returns to Wakanda to claim the throne but faces a powerful challenger."
-    },
-    {
-      "id": 19,
-      "title": "Avengers: Infinity War",
-      "release_date": "2018-04-27",
-      "phase": "3",
-      "description": "The Avengers unite to stop Thanos from collecting the Infinity Stones."
-    },
-    {
-      "id": 20,
-      "title": "Ant-Man and the Wasp",
-      "release_date": "2018-07-06",
-      "phase": "3",
-      "description": "Ant-Man teams up with the Wasp to rescue someone lost in the quantum realm."
-    },
-    {
-      "id": 21,
-      "title": "Captain Marvel",
-      "release_date": "2019-03-08",
-      "phase": "3",
-      "description": "Carol Danvers becomes one of the universe's most powerful heroes during a galactic war."
-    },
-    {
-      "id": 22,
-      "title": "Avengers: Endgame",
-      "release_date": "2019-04-26",
-      "phase": "3",
-      "description": "The Avengers attempt to undo the damage caused by Thanos’ snap."
-    },
-    {
-      "id": 23,
-      "title": "Spider-Man: Far From Home",
-      "release_date": "2019-07-02",
-      "phase": "3",
-      "description": "Peter Parker goes on a school trip to Europe, but trouble follows."
-    },
-    {
-      "id": 24,
-      "title": "Black Widow",
-      "release_date": "2021-07-09",
-      "phase": "4",
-      "description": "Natasha Romanoff confronts her past and faces a dangerous conspiracy."
-    },
-    {
-      "id": 25,
-      "title": "Shang-Chi and the Legend of the Ten Rings",
-      "release_date": "2021-09-03",
-      "phase": "4",
-      "description": "Shang-Chi must confront his father’s legacy and the secret of the Ten Rings."
-    },
-    {
-      "id": 26,
-      "title": "Eternals",
-      "release_date": "2021-11-05",
-      "phase": "4",
-      "description": "A group of ancient beings come out of hiding to protect Earth from a long-forgotten enemy."
-    },
-    {
-      "id": 27,
-      "title": "Spider-Man: No Way Home",
-      "release_date": "2021-12-17",
-      "phase": "4",
-      "description": "Peter Parker faces the multiverse as past villains return from other worlds."
-    },
-    {
-      "id": 28,
-      "title": "Doctor Strange in the Multiverse of Madness",
-      "release_date": "2022-05-06",
-      "phase": "4",
-      "description": "Doctor Strange travels across realities to stop a dangerous multiverse threat."
-    },
-    {
-      "id": 29,
-      "title": "Thor: Love and Thunder",
-      "release_date": "2022-07-08",
-      "phase": "4",
-      "description": "Thor faces a powerful new enemy and reconnects with Jane Foster as Mighty Thor."
-    },
-    {
-      "id": 30,
-      "title": "Black Panther: Wakanda Forever",
-      "release_date": "2022-11-11",
-      "phase": "4",
-      "description": "Wakanda mourns the loss of T’Challa and prepares to defend itself from new threats."
     }
   ],
- "characters": [
-  {
-    "id": 1,
-    "name": "Tony Stark / Iron Man",
-    "film_id": 1,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 2,
-    "name": "Steve Rogers / Captain America",
-    "film_id": 5,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 3,
-    "name": "Thor",
-    "film_id": 4,
-    "role": "hero",
-    "planet": "Asgard"
-  },
-  {
-    "id": 4,
-    "name": "Bruce Banner / Hulk",
-    "film_id": 2,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 5,
-    "name": "T'Challa / Black Panther",
-    "film_id": 18,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 6,
-    "name": "Peter Parker / Spider-Man",
-    "film_id": 16,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 7,
-    "name": "Stephen Strange / Doctor Strange",
-    "film_id": 14,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 8,
-    "name": "Carol Danvers / Captain Marvel",
-    "film_id": 21,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 9,
-    "name": "Peter Quill / Star-Lord",
-    "film_id": 10,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 10,
-    "name": "Natasha Romanoff / Black Widow",
-    "film_id": 6,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 11,
-    "name": "Wanda Maximoff / Scarlet Witch",
-    "film_id": 11,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 12,
-    "name": "Vision",
-    "film_id": 11,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 13,
-    "name": "Sam Wilson / Falcon",
-    "film_id": 13,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 14,
-    "name": "Scott Lang / Ant-Man",
-    "film_id": 12,
-    "role": "hero",
-    "planet": "Earth"
-  },
-  {
-    "id": 15,
-    "name": "Groot",
-    "film_id": 10,
-    "role": "hero",
-    "planet": "Planet X"
-  },
-  {
-    "id": 16,
-    "name": "Rocket Raccoon",
-    "film_id": 10,
-    "role": "hero",
-    "planet": "Halfworld"
-  },
-  {
-    "id": 17,
-    "name": "Gamora",
-    "film_id": 10,
-    "role": "hero",
-    "planet": "Zen-Whoberi"
-  },
-  {
-    "id": 18,
-    "name": "Drax the Destroyer",
-    "film_id": 10,
-    "role": "hero",
-    "planet": "Kylos"
-  },
-  {
-    "id": 19,
-    "name": "Thanos",
-    "film_id": 19,
-    "role": "villain",
-    "planet": "Titan"
-  },
-  {
-    "id": 20,
-    "name": "Loki",
-    "film_id": 4,
-    "role": "villain",
-    "planet": "Jotunheim"
-  },
-  {
-    "id": 21,
-    "name": "Ultron",
-    "film_id": 11,
-    "role": "villain",
-    "planet": "Earth"
-  },
-  {
-    "id": 22,
-    "name": "Red Skull",
-    "film_id": 5,
-    "role": "villain",
-    "planet": "Earth"
-  },
-  {
-    "id": 23,
-    "name": "Hela",
-    "film_id": 17,
-    "role": "villain",
-    "planet": "Asgard"
-  },
-  {
-    "id": 24,
-    "name": "Killmonger",
-    "film_id": 18,
-    "role": "villain",
-    "planet": "Earth"
-  },
-  {
-    "id": 25,
-    "name": "Green Goblin",
-    "film_id": 27,
-    "role": "villain",
-    "planet": "Earth"
-  },
-  {
-    "id": 26,
-    "name": "Dormammu",
-    "film_id": 14,
-    "role": "villain",
-    "planet": "Dark Dimension"
-  },
-  {
-    "id": 27,
-    "name": "Ronan the Accuser",
-    "film_id": 10,
-    "role": "villain",
-    "planet": "Kree Empire"
-  },
-  {
-    "id": 28,
-    "name": "Obadiah Stane / Iron Monger",
-    "film_id": 1,
-    "role": "villain",
-    "planet": "Earth"
-  },
-  {
-    "id": 29,
-    "name": "Ivan Vanko / Whiplash",
-    "film_id": 3,
-    "role": "villain",
-    "planet": "Earth"
-  },
-  {
-    "id": 30,
-    "name": "Kaecilius",
-    "film_id": 14,
-    "role": "villain",
-    "planet": "Earth"
-  },
-  {
-    "id": 31,
-    "name": "Taskmaster",
-    "film_id": 24,
-    "role": "villain",
-    "planet": "Earth"
-  }
-],
-  "planets": [
+  "characters": [
     {
       "id": 1,
-      "name": "Asgard"
+      "name": "Tony Stark / Iron Man",
+      "film_id": 1,
+      "role": "hero",
+      "planet": "Earth"
     },
     {
       "id": 2,
-      "name": "Dark Dimension"
+      "name": "Bruce Banner / Hulk",
+      "film_id": 2,
+      "role": "hero",
+      "planet": "Earth"
     },
     {
       "id": 3,
-      "name": "Earth"
+      "name": "Thor",
+      "film_id": 4,
+      "role": "hero",
+      "planet": "Asgard"
     },
     {
       "id": 4,
-      "name": "Halfworld"
+      "name": "Steve Rogers / Captain America",
+      "film_id": 5,
+      "role": "hero",
+      "planet": "Earth"
     },
     {
       "id": 5,
-      "name": "Jotunheim"
+      "name": "Natasha Romanoff / Black Widow",
+      "film_id": 6,
+      "role": "hero",
+      "planet": "Earth"
     },
     {
       "id": 6,
-      "name": "Kree Empire"
+      "name": "Loki",
+      "film_id": 4,
+      "role": "villain",
+      "planet": "Jotunheim"
     },
     {
       "id": 7,
-      "name": "Kylos"
+      "name": "Red Skull",
+      "film_id": 5,
+      "role": "villain",
+      "planet": "Earth"
     },
     {
       "id": 8,
-      "name": "Planet X"
+      "name": "Obadiah Stane / Iron Monger",
+      "film_id": 1,
+      "role": "villain",
+      "planet": "Earth"
     },
     {
       "id": 9,
-      "name": "Titan"
+      "name": "Drax the Destroyer",
+      "film_id": 10,
+      "role": "hero",
+      "planet": "Kylos"
     },
     {
       "id": 10,
+      "name": "Gamora",
+      "film_id": 10,
+      "role": "hero",
+      "planet": "Zen-Whoberi"
+    }
+  ],
+  "planets": [
+    {
+      "id": 1,
+      "name": "Earth"
+    },
+    {
+      "id": 2,
+      "name": "Asgard"
+    },
+    {
+      "id": 3,
+      "name": "Jotunheim"
+    },
+    {
+      "id": 4,
+      "name": "Kylos"
+    },
+    {
+      "id": 5,
       "name": "Zen-Whoberi"
     }
   ]

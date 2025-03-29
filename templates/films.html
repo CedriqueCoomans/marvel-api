@@ -14,11 +14,11 @@
 
     <div class="film-grid">
         {% for film in films %}
-        <div class="film-card">
+        <div class="film-card" title="{{ film.description }}">
             <h2>{{ film.title }}</h2>
             <p><strong>Release:</strong> {{ film.release_date }}</p>
             <p><strong>Phase:</strong> {{ film.phase }}</p>
-            <a href="/films/{{ film.id }}">Bekijk details →</a>
+            <a href="/films/{{ film.id }}">More info →</a>
         </div>
         {% endfor %}
     </div>
