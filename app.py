@@ -8,7 +8,6 @@ BASE_URL = "https://my-json-server.typicode.com/CedriqueCoomans/marvel-api"
 def home():
     return render_template("home.html")
 
-# FILMS
 @app.route("/films")
 def show_films():
     response = requests.get(f"{BASE_URL}/movies")
@@ -27,7 +26,6 @@ def film_detail(film_id):
 
     return render_template("film_detail.html", film=film, characters=film_characters)
 
-# CHARACTERS
 @app.route("/characters")
 def all_characters():
     response = requests.get(f"{BASE_URL}/characters")
@@ -47,7 +45,6 @@ def character_detail(type, char_id):
 
     return render_template("character_detail.html", character=character, character_movies=character_movies)
 
-# PLANETS
 @app.route("/planets")
 def show_planets():
     response = requests.get(f"{BASE_URL}/planets")

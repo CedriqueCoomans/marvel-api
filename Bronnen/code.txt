@@ -1,0 +1,22 @@
+Dit project is tot stand gekomen in samenwerking met ChatGPT (OpenAI). Tijdens de ontwikkeling van dit Marvel-informatieportaal kreeg ik ondersteuning bij:
+Het opzetten van een Flask-applicatie (routing, templates, static files)
+Het structureren van JSON-data en linken van films aan personages
+Het toepassen van CSS-styling en verbeteren van gebruikerservaring
+Het detecteren en oplossen van fouten in de code
+Het toevoegen van beschrijvende tekst en afbeeldingen bij Marvel-films en -karakters
+Het vinden van informatie over Marvel-personages en films, op basis van een beperkt voorbeeld dat ik zelf had gegeven
+Het samen uitwerken van HTML-templates, met logische opbouw en nette vormgeving op (29/03/2025)
+
+Geraadpleegde bronnen:
+https://youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc&si=Zn-Igz6ANJrbozYQ (29/03/2025)
+https://www.w3schools.com/js/js_json_intro.asp (29/03/2025)
+https://flask.palletsprojects.com/en/latest/api/#flask.Flask (29/03/2025)
+https://flask.palletsprojects.com/en/latest/quickstart/#routing (29/03/2025)
+https://flask.palletsprojects.com/en/latest/quickstart/#rendering-templates (29/03/2025)
+https://flask.palletsprojects.com/en/latest/quickstart/#static-files (29/03/2025)
+https://flask.palletsprojects.com/en/latest/templating/ (29/03/2025)
+https://flask.palletsprojects.com/en/latest/quickstart/#a-minimal-application (29/03/2025)
+https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3 (29/03/2025)
+https://www.w3schools.com/css/default.asp (29/03/2025)
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-basics-and-terminology (29/03/2025)
+https://www.w3schools.com/html/html_editors.asp (29/03/2025)

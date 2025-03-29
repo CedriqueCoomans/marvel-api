@@ -93,7 +93,8 @@
       3,
       6,
       7
-    ]
+    ],
+    "image": "tony_stark.jpg"
   },
   {
     "id": 2,
@@ -104,7 +105,8 @@
     "movie_ids": [
       2,
       6
-    ]
+    ],
+    "image": "bruce.jpg"
   },
   {
     "id": 3,
@@ -116,7 +118,8 @@
       4,
       6,
       8
-    ]
+    ],
+    "image": "chris.jpg"
   },
   {
     "id": 4,
@@ -128,7 +131,8 @@
       5,
       6,
       9
-    ]
+    ],
+    "image": "steve.jpg"
   },
   {
     "id": 5,
@@ -138,7 +142,8 @@
     "actor": "Scarlett Johansson",
     "movie_ids": [
       6
-    ]
+    ],
+    "image": "natasha.jpg"
   },
   {
     "id": 6,
@@ -149,7 +154,8 @@
     "movie_ids": [
       4,
       6
-    ]
+    ],
+    "image": "tom.jpg"
   },
   {
     "id": 7,
@@ -159,7 +165,8 @@
     "actor": "Hugo Weaving",
     "movie_ids": [
       5
-    ]
+    ],
+    "image": "hugo.jpg"
   },
   {
     "id": 8,
@@ -169,7 +176,8 @@
     "actor": "Jeff Bridges",
     "movie_ids": [
       1
-    ]
+    ],
+    "image": "iron_monger.jpg"
   },
   {
     "id": 9,
@@ -179,7 +187,8 @@
     "actor": "Dave Bautista",
     "movie_ids": [
       10
-    ]
+    ],
+    "image": "drax.jpg"
   },
   {
     "id": 10,
@@ -189,29 +198,35 @@
     "actor": "Zoe Saldaña",
     "movie_ids": [
       10
-    ]
+    ],
+    "image": "gamora.jpg"
   }
 ],
   "planets": [
     {
       "id": 1,
-      "name": "Earth"
+      "name": "Earth",
+      "image": "earth.jpg"
     },
     {
       "id": 2,
-      "name": "Asgard"
+      "name": "Asgard",
+      "image": "asgard.jpg"
     },
     {
       "id": 3,
-      "name": "Jotunheim"
+      "name": "Jotunheim",
+      "image": "jotunheim.jpg"
     },
     {
       "id": 4,
-      "name": "Kylos"
+      "name": "Kylos",
+      "image": "kylos.jpg"
     },
     {
       "id": 5,
-      "name": "Zen-Whoberi"
+      "name": "Zen-Whoberi",
+      "image": "zen_whoberi.jpg"
     }
   ]
 }
