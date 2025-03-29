@@ -13,6 +13,7 @@
     <h1>{{ film.title }}</h1>
 
     <div class="film-detail">
+        <img src="/static/images/{{ film.image }}" alt="{{ film.title }}" class="film-image">
         <p><strong>Release date:</strong> {{ film.release_date }}</p>
         <p><strong>Phase:</strong> {{ film.phase }}</p>
         <p><strong>Description:</strong> {{ film.description }}</p>
@@ -23,9 +24,7 @@
             <ul>
                 {% for character in characters %}
                 <li>
-                    <a href="/characters/{{ character.role }}s/{{ character.id }}">
-                        {{ character.name }}
-                    </a> ({{ character.role | capitalize }})
+                    <a href="/characters/{{ character.role }}s/{{ character.id }}">{{ character.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -35,7 +34,6 @@
 
     <br>
     <a href="/films">← Back to overview</a>
-
 </body>
 
 </html>

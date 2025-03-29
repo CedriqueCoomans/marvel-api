@@ -17,11 +17,11 @@
         <p><strong>Planet:</strong> {{ character.planet }}</p>
         <p><strong>Actor:</strong> {{ character.actor }}</p>
 
-        {% if character_movies %}
+        {% if films %}
         <div class="character-movies">
             <h3>Appears in:</h3>
             <ul>
-                {% for movie in character_movies %}
+                {% for movie in films %}
                 <li><a href="/films/{{ movie.id }}">{{ movie.title }}</a></li>
                 {% endfor %}
             </ul>
