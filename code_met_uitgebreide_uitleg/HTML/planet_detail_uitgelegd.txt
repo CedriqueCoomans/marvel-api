@@ -1,0 +1,56 @@
+Wat doet deze pagina?
+Dit is de detailpagina van een planeet.
+Je ziet:
+
+De naam van de planeet (uit JSON),
+
+Een afbeelding van de planeet,
+
+Een eenvoudige tekst ("This planet is part of the Marvel Universe"),
+
+Een terugknop naar het overzicht.
+
+<!DOCTYPE html>
+<!-- HTML5-doctype, informeert de browser dat dit een moderne HTML-pagina is -->
+
+<html lang="en">
+<!-- Paginataal is Engels, nuttig voor SEO en screenreaders -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat speciale tekens (zoals ë of é) correct getoond worden -->
+
+    <title>{{ planet.name }}</title>
+    <!-- De titel in de browsertab wordt ingevuld met de naam van de planeet via Jinja2 -->
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Verbindt met je externe stylesheet dat in je 'static/css' map zit -->
+</head>
+
+<body>
+    <!-- Start van de zichtbare pagina -->
+
+    <a href="/" class="back-home">← Home</a>
+    <!-- Link terug naar de startpagina met een custom CSS-klasse voor styling -->
+
+    <h1>{{ planet.name }}</h1>
+    <!-- De naam van de planeet wordt hier dynamisch weergegeven met Jinja2 -->
+
+    <div class="planet-detail">
+        <!-- Container met opmaak voor het detailgedeelte van de planeet -->
+
+        <img src="/static/images/{{ planet.image }}" alt="{{ planet.name }}" class="detail-image">
+        <!-- Planeetafbeelding wordt geladen uit de map /static/images met alt-tekst -->
+
+        <p>This planet is part of the Marvel Universe.</p>
+        <!-- Statische beschrijving die je nog kan uitbreiden met extra gegevens -->
+    </div>
+
+    <br>
+    <!-- Lijntje ruimte voor visuele scheiding -->
+
+    <a href="/planets">← Back to overview</a>
+    <!-- Link terug naar de planetenoverzichtspagina -->
+</body>
+
+</html>

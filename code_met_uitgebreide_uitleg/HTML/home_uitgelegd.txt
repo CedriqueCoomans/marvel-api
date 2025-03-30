@@ -1,0 +1,64 @@
+Wat doet deze pagina?
+Dit is je startpagina of homepagina.
+Het toont een Marvel-logo en 3 duidelijke knoppen:
+
+Naar de films
+Naar de karakters
+Naar de planeten
+
+Gebruikte technieken
+Code	Betekenis
+<img src="/static/images/marvel.jpg">	Laadt de Marvel-afbeelding uit je static/images map
+<a href="/films">Films</a>	Navigatielink naar de route /films
+<nav>	Semantisch HTML-element dat duidelijk maakt dat dit een navigatieblok is
+.container, .menu, .marvel-logo	CSS-klassen voor layout en opmaak (zoals flexbox, spacing, kleuren etc.)
+
+<!DOCTYPE html>
+<!-- HTML5 documenttype: dit zegt tegen de browser dat dit een moderne HTML-pagina is -->
+
+<html lang="en">
+<!-- Taal van de pagina is Engels (voor zoekmachines en schermlezers) -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Tekencodering: zorgt dat speciale tekens correct weergegeven worden -->
+
+    <title>Marvel Database</title>
+    <!-- De titel van de pagina zoals die in het browsertabblad verschijnt -->
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Verbindt deze pagina met je CSS-bestand dat in de 'static/css'-map staat -->
+</head>
+
+<body>
+    <!-- Begin van de zichtbare inhoud -->
+
+    <h1>Marvel Database</h1>
+    <!-- Grote titel bovenaan de pagina -->
+
+    <div class="container">
+        <!-- Container voor logo + menu naast elkaar -->
+
+        <div class="marvel-logo">
+            <!-- Blok voor de Marvel afbeelding -->
+            <img src="/static/images/marvel.jpg" alt="Marvel">
+            <!-- Afbeelding uit de static/images map, met alt-tekst voor toegankelijkheid -->
+        </div>
+
+        <nav class="menu">
+            <!-- Navigatiemenu met links naar de drie hoofdpagina’s -->
+
+            <a href="/films">Films</a>
+            <!-- Link naar de films-overzichtspagina -->
+
+            <a href="/characters">Karakters</a>
+            <!-- Link naar alle Marvel-personages -->
+
+            <a href="/planets">Planeten</a>
+            <!-- Link naar de lijst van planeten uit de database -->
+        </nav>
+    </div>
+
+</body>
+
+</html>

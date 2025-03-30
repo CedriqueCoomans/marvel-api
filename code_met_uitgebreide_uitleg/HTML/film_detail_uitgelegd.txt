@@ -1,0 +1,50 @@
+Wat doet dit bestand?
+Toont de detailpagina van één specifieke film.
+
+Informatie komt uit je db.json via de film_id in de URL.
+
+Personages worden automatisch gelinkt aan deze film via hun movie_ids.
+
+Elke character-link verwijst netjes naar /characters/heroes/<id> of /characters/villains/<id>.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ film.title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <a href="/" class="back-home">← Home</a>
+
+    <h1>{{ film.title }}</h1>
+
+    <div class="film-detail">
+        <img src="/static/images/{{ film.image }}" alt="{{ film.title }}" class="film-image">
+        <p><strong>Release date:</strong> {{ film.release_date }}</p>
+        <p><strong>Phase:</strong> {{ film.phase }}</p>
+        <p><strong>Duration:</strong> {{ film.runtime }}</p> <!-- correct veldnaam -->
+        <p><strong>Director:</strong> {{ film.director }}</p>
+        <p><strong>Box Office:</strong> {{ film.box_office }}</p> <!-- correct veldnaam -->
+        <p><strong>Description:</strong> {{ film.description }}</p>
+
+        {% if characters %}
+        <div class="character-list">
+            <h3>Characters in this movie:</h3>
+            <ul>
+                {% for character in characters %}
+                {% set url_role = 'heroes' if character.role == 'hero' else 'villains' %}
+                <li><a href="/characters/{{ url_role }}/{{ character.id }}">{{ character.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+
+    <br>
+    <a href="/films">← Back to overview</a>
+</body>
+
+</html>

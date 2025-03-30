@@ -1,0 +1,56 @@
+Wat doet deze pagina?
+Toont een overzicht van alle planeten uit je JSON
+Elke planeet is klikbaar en stuurt je door naar de detailpagina van die planeet
+Gebruikt Jinja2 ({% for ... %}) om de planeten dynamisch in te laden
+Stijl wordt geregeld via je CSS (planet-grid en planet-card)
+
+<!DOCTYPE html>
+<!-- Dit is een HTML5 documentdefinitie -->
+
+<html lang="en">
+<!-- De taal van de pagina wordt ingesteld op Engels -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Tekencodering wordt ingesteld op UTF-8, wat speciale tekens ondersteunt -->
+
+    <title>Marvel Planets</title>
+    <!-- Titel die in de browsertab verschijnt -->
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Verwijst naar het externe CSS-bestand voor opmaak -->
+</head>
+
+<body>
+    <!-- Start van de zichtbare inhoud van de pagina -->
+
+    <a href="/" class="back-home">← Home</a>
+    <!-- Link terug naar de homepage, met een aangepaste stijl via de CSS-klasse 'back-home' -->
+
+    <h1>Marvel Planets</h1>
+    <!-- Hoofdtitel van de pagina -->
+
+    <div class="planet-grid">
+        <!-- Grid-container waarin alle planeten worden weergegeven.
+             De CSS-klasse 'planet-grid' zorgt voor een nette kolomindeling. -->
+
+        {% for planet in planets %}
+        <!-- Start van een for-loop met Jinja2 om elke planeet uit de lijst 'planets' weer te geven -->
+
+        <div class="planet-card">
+            <!-- Elke planeet krijgt een eigen kaart met opmaak via de CSS-klasse 'planet-card' -->
+
+            <h2>
+                <a href="/planets/{{ planet.id }}">{{ planet.name }}</a>
+                <!-- De naam van de planeet wordt als klikbare link weergegeven.
+                     Bij klikken ga je naar de detailpagina van die planeet. -->
+            </h2>
+        </div>
+
+        {% endfor %}
+        <!-- Einde van de loop -->
+    </div>
+
+</body>
+
+</html>

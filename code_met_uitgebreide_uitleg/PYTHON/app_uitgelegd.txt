@@ -1,9 +1,3 @@
-# ============================================================
-#  Marvel Project - Flask Webapp
-#  Uitleg per regel en functie voor educatieve doeleinden
-#  Datum: 30 maart 2025
-# ============================================================
-
 from flask import Flask, render_template  # Flask gebruiken om routes te maken en HTML-templates te tonen
 import requests  # Requests gebruiken we om externe JSON-data op te halen (API-verzoeken)
 

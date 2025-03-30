@@ -1,0 +1,86 @@
+Samenvatting:
+Jinja2 variabelen zoals {{ character.name }} worden opgevuld met data uit je JSON via Flask.
+
+{% if ... %} en {% for ... %} zijn Jinja2-logica, die bepaalt wat er getoond wordt op basis van de JSON.
+
+CSS classes zoals .character-detail of .detail-image komen uit je style.css en regelen de visuele opmaak. 
+
+<!DOCTYPE html>
+<!-- Geeft aan dat dit een HTML5-document is -->
+
+<html lang="en">
+<!-- De taal van de website is Engels, goed voor SEO en screenreaders -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Tekenset UTF-8 ondersteunt alle karakters, ook accenten of symbolen -->
+
+    <title>{{ character.name }}</title>
+    <!-- De titel die bovenaan de tab komt, dynamisch gegenereerd uit de JSON-variabele 'name' -->
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Verwijzing naar het externe CSS-bestand voor de opmaak -->
+</head>
+
+<body>
+    <!-- Link om terug te gaan naar de homepage -->
+    <a href="/" class="back-home">← Home</a>
+
+    <!-- Hoofdtitel van de pagina, toont de naam van het personage -->
+    <h1>{{ character.name }}</h1>
+
+    <!-- Begin van het detailblok dat alle info over het personage toont -->
+    <div class="character-detail">
+
+        <!-- Personage-afbeelding -->
+        <!-- Het pad verwijst naar de 'static/images'-map + dynamisch bestandsnaam -->
+        <img src="/static/images/{{ character.image }}" alt="{{ character.name }}" class="detail-image">
+
+        <!-- Dynamisch gegenereerde info over het personage -->
+        <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
+        <!-- 'hero' of 'villain' → wordt met hoofdletter weergegeven -->
+
+        <p><strong>Planet:</strong> {{ character.planet }}</p>
+        <!-- Planeet van afkomst -->
+
+        <p><strong>Actor:</strong> {{ character.actor }}</p>
+        <!-- Naam van de acteur die dit personage vertolkt -->
+
+        <!-- CONDITIE: Alleen tonen als er een 'powers' lijst is -->
+        {% if character.powers %}
+        <div class="powers-list">
+            <p><strong>Powers:</strong></p>
+            <ul>
+                <!-- Loop door alle powers die in de lijst zitten -->
+                {% for power in character.powers %}
+                <li>{{ power }}</li>
+                <!-- Voorbeeld: "Super strength", "Flight", ... -->
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+        <!-- CONDITIE: Alleen tonen als het personage in films voorkomt -->
+        {% if character_movies %}
+        <div class="character-movies">
+            <h3>Appears in:</h3>
+            <ul>
+                <!-- Loop door de lijst van gekoppelde films -->
+                {% for movie in character_movies %}
+                <li>
+                    <!-- Klikbare link naar de detailpagina van de film -->
+                    <a href="/films/{{ movie.id }}">{{ movie.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <!-- Navigatie terug naar overzicht van alle personages -->
+    <a href="/characters">← Back to all characters</a>
+</body>
+
+</html>

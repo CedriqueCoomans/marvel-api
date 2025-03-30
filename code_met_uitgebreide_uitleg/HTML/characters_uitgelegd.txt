@@ -1,0 +1,86 @@
+Wat doet deze pagina?
+Toont een overzicht van alle Marvel-personages.
+
+Laat afbeeldingen en namen van elk personage zien.
+
+Via de filters bovenaan kun je wisselen tussen alle personages, helden en schurken.
+
+Elke naam is klikbaar en leidt naar de detailpagina van het personage.
+
+Enkele technieken:
+Element	Functie
+{{ ... }}	Jinja2-template om variabelen van Flask in HTML te tonen.
+{% ... %}	Jinja2-logica: for-loops, if-statements, variabelen instellen.
+.image	Wordt gebruikt om dynamisch afbeeldingen te tonen uit JSON.
+.character-grid	CSS-grid voor overzicht in kolommen.
+
+<!DOCTYPE html>
+<!-- Geeft aan dat dit een HTML5-document is -->
+
+<html lang="en">
+<!-- Taal van de website ingesteld op Engels -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat speciale tekens (zoals accenten) correct worden weergegeven -->
+
+    <title>Marvel Characters</title>
+    <!-- Titel van de pagina (weergegeven in het tabblad van de browser) -->
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Verwijzing naar je externe CSS-bestand voor styling -->
+</head>
+
+<body>
+    <!-- Knop/link om terug te keren naar de homepage -->
+    <a href="/" class="back-home">← Home</a>
+
+    <!-- Hoofdtitel van de pagina -->
+    <h1>Marvel Characters</h1>
+
+    <!-- Filtermenu bovenaan om te switchen tussen alle characters, alleen heroes of alleen villains -->
+    <div class="filter-menu">
+        <!-- Link naar alle personages -->
+        <a href="/characters"
+           class="{{ 'active' if not request.path.endswith('/heroes') and not request.path.endswith('/villains') else '' }}">
+           All</a>
+
+        <!-- Link naar helden -->
+        <a href="/characters/heroes/"
+           class="{{ 'active' if 'heroes' in request.path else '' }}">
+           Heroes</a>
+
+        <!-- Link naar schurken -->
+        <a href="/characters/villains/"
+           class="{{ 'active' if 'villains' in request.path else '' }}">
+           Villains</a>
+    </div>
+
+    <!-- Grid-weergave van alle personages -->
+    <div class="character-grid">
+        <!-- Herhaal dit blok voor elk personage uit de lijst 'characters' die wordt meegegeven door Flask -->
+        {% for character in characters %}
+        <div class="character-card">
+            <!-- Zet de rol van het personage ('hero' of 'villain') om naar lowercase -->
+            {% set role = character.role|lower %}
+
+            <!-- Bepaal de URL-vorm: gebruik 'heroes' of 'villains' in de route -->
+            {% set url_role = 'heroes' if role == 'hero' else 'villains' %}
+
+            <!-- Toon afbeelding van personage als die bestaat -->
+            {% if character.image %}
+            <img src="/static/images/{{ character.image }}"
+                 alt="{{ character.name }}"
+                 class="character-overview-image">
+            {% endif %}
+
+            <!-- Naam van het personage als link naar de detailpagina -->
+            <!-- Dynamische URL op basis van rol en ID, bijv. /characters/heroes/3 -->
+            <h2><a href="/characters/{{ url_role }}/{{ character.id }}">{{ character.name }}</a></h2>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>

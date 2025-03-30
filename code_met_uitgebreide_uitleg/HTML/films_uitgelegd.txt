@@ -1,0 +1,66 @@
+Wat doet dit bestand?
+Het toont alle films uit de JSON-database in een rasterlay-out.
+Elke film wordt weergegeven als een kaartje met afbeelding en titel.
+Klikken op een titel brengt je naar de detailpagina van die specifieke film.
+
+Belangrijk in deze HTML:
+Code	Betekenis
+{% for film in films %}	Loopt over de lijst met films uit Flask
+{{ film.image }}	Dynamisch de afbeeldingsnaam uit de JSON
+class="film-grid"	Zorgt dat de layout een raster (grid) is
+href="/films/{{ film.id }}"	Stuurt gebruiker naar de juiste detailpagina
+
+<!DOCTYPE html>
+<!-- HTML5-document -->
+
+<html lang="en">
+<!-- De taal van deze webpagina is Engels -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Zorgt ervoor dat speciale tekens correct worden weergegeven -->
+
+    <title>Marvel Films</title>
+    <!-- De titel die je ziet in het browser-tabblad -->
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Verwijzing naar je CSS-bestand voor de opmaak -->
+</head>
+
+<body>
+    <!-- Terug naar de homepagina knop bovenaan -->
+    <a href="/" class="back-home">← Home</a>
+
+    <!-- Hoofdtitel van de pagina -->
+    <h1>Marvel Films</h1>
+
+    <!-- Start van de filmoverzicht-container -->
+    <div class="film-grid">
+        {% for film in films %}
+        <!-- Loop door alle films die van de backend (Python) zijn doorgestuurd -->
+
+        <div class="film-card">
+            <!-- Individuele filmkaart -->
+
+            {% if film.image %}
+            <!-- Alleen afbeelding tonen als de film een afbeelding heeft -->
+            <img src="/static/images/{{ film.image }}"
+                 alt="{{ film.title }}"
+                 class="film-image">
+            {% endif %}
+
+            <!-- Filmtitel als klikbare link naar de detailpagina -->
+            <h2>
+                <a href="/films/{{ film.id }}">
+                    {{ film.title }}
+                </a>
+            </h2>
+        </div>
+
+        {% endfor %}
+        <!-- Einde van de loop -->
+    </div>
+
+</body>
+
+</html>
