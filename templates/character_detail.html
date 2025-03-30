@@ -13,15 +13,17 @@
     <h1>{{ character.name }}</h1>
 
     <div class="character-detail">
+        <img src="/static/images/{{ character.image }}" alt="{{ character.name }}" class="detail-image">
+
         <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
         <p><strong>Planet:</strong> {{ character.planet }}</p>
         <p><strong>Actor:</strong> {{ character.actor }}</p>
 
-        {% if films %}
+        {% if character_movies %}
         <div class="character-movies">
             <h3>Appears in:</h3>
             <ul>
-                {% for movie in films %}
+                {% for movie in character_movies %}
                 <li><a href="/films/{{ movie.id }}">{{ movie.title }}</a></li>
                 {% endfor %}
             </ul>

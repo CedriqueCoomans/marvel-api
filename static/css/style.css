@@ -12,7 +12,6 @@ h1 {
     font-size: 48px;
     margin: 30px 0;
     color: #e62429;
-    /* Marvel rood */
 }
 
 a {
@@ -118,14 +117,6 @@ a:hover {
     transform: scale(1.02);
 }
 
-.film-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    object-fit: cover;
-}
-
 /* =============== FILM DETAIL =============== */
 .film-detail {
     max-width: 600px;
@@ -135,6 +126,16 @@ a:hover {
     border-radius: 12px;
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
     color: #f1f1f1;
+    text-align: center;
+}
+
+.film-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
 }
 
 .film-detail .character-list {
@@ -160,14 +161,6 @@ a:hover {
 .film-detail .character-list a {
     color: #f1f1f1;
     font-weight: bold;
-}
-.film-image {
-    max-width: 400px;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto 20px auto;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
 }
 
 /* =============== CHARACTER OVERZICHT =============== */
@@ -209,6 +202,37 @@ a:hover {
 }
 
 /* =============== CHARACTER DETAIL =============== */
+.character-movies {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: left;
+}
+
+.character-movies h3 {
+    color: #e62429;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.character-movies ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.character-movies li {
+    margin-bottom: 8px;
+}
+
+.character-movies a {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.character-movies a:hover {
+    text-decoration: underline;
+} 
 .character-detail {
     max-width: 600px;
     margin: 40px auto;
@@ -218,6 +242,13 @@ a:hover {
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
     text-align: center;
     font-size: 18px;
+}
+
+.detail-image {
+    max-width: 300px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.1);
 }
 
 /* =============== PLANET OVERZICHT =============== */
