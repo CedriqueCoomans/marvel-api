@@ -340,24 +340,6 @@
         "Agility",
         "Swordsmanship"
       ]
-    },
-    {
-      "id": 11,
-      "name": "Wanda Maximoff / Scarlet Witch",
-      "role": "hero",
-      "planet": "Earth",
-      "actor": "Elizabeth Olsen",
-      "movie_ids": [
-        6,
-        11,
-        13
-      ],
-      "image": "wanda.jpg",
-      "powers": [
-        "Telekinesis",
-        "Energy manipulation",
-        "Reality warping"
-      ]
     }
   ],
   "planets": [
