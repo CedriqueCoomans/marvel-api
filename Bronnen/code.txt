@@ -1,12 +1,13 @@
 Dit project is tot stand gekomen in samenwerking met ChatGPT (OpenAI). Tijdens de ontwikkeling van dit Marvel-informatieportaal kreeg ik ondersteuning bij:
-Het opzetten van een Flask-applicatie (routing, templates, static files)
-Het structureren van JSON-data en linken van films aan personages
-Het toepassen van CSS-styling en verbeteren van gebruikerservaring
-Het detecteren en oplossen van fouten in de code
-Het toevoegen van beschrijvende tekst en afbeeldingen bij Marvel-films en -karakters
-Het vinden van informatie over Marvel-personages en films, op basis van een beperkt voorbeeld dat ik zelf had gegeven
-Het samen uitwerken van HTML-templates, met logische opbouw en nette vormgeving op (29/03/2025)
-
+Geholpen bij het opzetten van een Flask-applicatie (routing, templates, static files) (29/03/2025)
+Geholpen bij het helpen structureren van JSON-data en linken van films aan personages (29/03/2025) 
+Het toepassen van CSS-styling en verbeteren van gebruikerservaring (29/03/2025)
+Het detecteren en oplossen van fouten in de code (29/03/2025)
+Het toevoegen van beschrijvende tekst bij Marvel-films (29/03/2025)
+Het vinden van informatie over Marvel-personages en films, op basis van een beperkt voorbeeld dat ik zelf had gegeven (29/03/2025)
+Geholpen bij het uitwerken van HTML-templates, met logische opbouw en nette vormgeving (29/03/2025)
+Helpen schrijven van een stappenplan en mij bronnen gegeven (29/03/2025)
+Het schrijven van commentaar bij de code (29/03/2025)
 Geraadpleegde bronnen:
 https://youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc&si=Zn-Igz6ANJrbozYQ (29/03/2025)
 https://www.w3schools.com/js/js_json_intro.asp (29/03/2025)

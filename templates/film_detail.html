@@ -27,13 +27,18 @@
             <h3>Characters in this movie:</h3>
             <ul>
                 {% for character in characters %}
+                {% set role = character.role|lower %}
+                {% set url_role = 'heroes' if role == 'hero' else 'villains' %}
                 <li>
-                    <a href="/characters/{{ character.role }}s/{{ character.id }}">{{ character.name }}</a>
+                    <a href="/characters/{{ url_role }}/{{ character.id }}">
+                        {{ character.name }}
+                    </a>
                 </li>
                 {% endfor %}
             </ul>
         </div>
         {% endif %}
+
     </div>
 
     <br>

@@ -201,6 +201,32 @@ a:hover {
     transform: scale(1.02);
 }
 
+.filter-menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-menu a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 16px;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.filter-menu a:hover {
+    background-color: #e62429;
+    color: white;
+}
+
+.filter-menu a.active {
+    background-color: #e62429;
+    color: white;
+}
+
 /* =============== CHARACTER DETAIL =============== */
 .character-movies {
     margin-top: 30px;

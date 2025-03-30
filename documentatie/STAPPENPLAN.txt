@@ -1,0 +1,52 @@
+Project Stappenplan met Bronnen
+Stap 1: Maak een Flask-app aan
+Gebruik Flask(__name__) om een nieuwe webapp te starten.
+🔗 https://flask.palletsprojects.com/en/latest/quickstart/#a-minimal-application
+
+Stap 2: Verbind met JSON-server (API)
+Gebruik requests.get() om JSON-data op te halen van een externe API.
+🔗 https://requests.readthedocs.io/en/latest/user/quickstart/#make-a-request
+
+Stap 3: Maak een homepagina route
+Gebruik @app.route("/") en render_template("home.html").
+🔗 https://flask.palletsprojects.com/en/latest/quickstart/#routing
+
+Stap 4: Films tonen
+
+/films → Toon alle films via een GET-request.
+
+/films/<id> → Filter personages waarvan movie_ids de film_id bevat.
+🔗 https://flask.palletsprojects.com/en/latest/quickstart/#variable-rules
+🔗 https://jinja.palletsprojects.com/en/latest/templates/#for
+
+Stap 5: Personages tonen
+
+/characters → Toon lijst van alle personages.
+
+/characters/<type>s/<id> → Toon detailpagina + bijhorende films (via movie_ids).
+🔗 https://docs.python.org/3/library/functions.html#next
+🔗 https://jinja.palletsprojects.com/en/latest/templates/#if
+
+Stap 6: Planeten tonen
+
+/planets → Toon lijst met planeten.
+
+/planets/<id> → Toon detailpagina van 1 planeet.
+🔗 https://flask.palletsprojects.com/en/latest/quickstart/#variable-rules
+
+Stap 7: Gebruik Jinja2 in HTML-templates om data te tonen
+Via {{ variable }} en {% for ... %} kun je data uit Python gebruiken in HTML.
+🔗 https://jinja.palletsprojects.com/en/latest/templates/
+
+Stap 8: Voeg CSS toe voor styling
+Laad een extern .css bestand via <link rel="stylesheet">.
+🔗 https://developer.mozilla.org/en-US/docs/Web/CSS
+🔗 https://flask.palletsprojects.com/en/latest/tutorial/static/
+
+Stap 9: Voeg afbeeldingen toe voor visuele extra's
+Gebruik <img src="/static/images/naam.jpg"> in detailpagina's.
+🔗 https://flask.palletsprojects.com/en/latest/tutorial/static/#serving-static-files
+
+Stap 10: Test elke route en pagina
+Controleer of de routes correct werken en of de data goed weergegeven wordt. Debug eventueel met app.run(debug=True).
+🔗 https://flask.palletsprojects.com/en/latest/debugging/

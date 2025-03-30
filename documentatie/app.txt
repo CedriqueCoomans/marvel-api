@@ -1,84 +1,127 @@
-from flask import Flask, render_template
-import requests
+# ============================================================
+#  Marvel Project - Flask Webapp
+#  Uitleg per regel en functie voor educatieve doeleinden
+#  Datum: 30 maart 2025
+# ============================================================
 
+from flask import Flask, render_template  # Flask gebruiken om routes te maken en HTML-templates te tonen
+import requests  # Requests gebruiken we om externe JSON-data op te halen (API-verzoeken)
+
+# Maak een nieuwe Flask-applicatie aan
 app = Flask(__name__)
+
+# De URL naar je mock JSON-server waar alle Marvel data staat
 BASE_URL = "https://my-json-server.typicode.com/CedriqueCoomans/marvel-api"
 
-@app.route("/")
-def home():
-    return render_template("home.html")
 
-@app.route("/films")
+# ===================== HOME PAGINA ===================== #
+@app.route("/")  # Route voor de startpagina van de website
+def home():
+    return render_template("home.html")  # Laad het bestand home.html (template met logo & knoppen)
+
+
+# ===================== FILMS ===================== #
+@app.route("/films")  # Route voor overzicht van alle Marvel-films
 def show_films():
+    # API-verzoek naar /movies endpoint
     response = requests.get(f"{BASE_URL}/movies")
+
+    # Als het verzoek gelukt is (statuscode 200), converteer naar JSON
     films = response.json() if response.status_code == 200 else []
+
+    # Geef de lijst van films door aan de template films.html
     return render_template("films.html", films=films)
 
-@app.route("/films/<int:film_id>")
+
+@app.route("/films/<int:film_id>")  # Route voor detailpagina van 1 film op basis van ID
 def film_detail(film_id):
+    # API-verzoek voor specifieke film
     film_res = requests.get(f"{BASE_URL}/movies/{film_id}")
+
+    # API-verzoek voor ALLE characters (nodig om te filteren wie in deze film zit)
     character_res = requests.get(f"{BASE_URL}/characters")
 
+    # Zet beide responses om naar JSON (film = dict, characters = lijst van dicts)
     film = film_res.json() if film_res.status_code == 200 else None
     characters = character_res.json() if character_res.status_code == 200 else []
 
+    # Filter de characters op basis van movie_ids lijst
     film_characters = [
         char for char in characters if film_id in char.get("movie_ids", [])
     ]
 
+    # Render de detailpagina voor de film, met alle characters die erin meespelen
     return render_template("film_detail.html", film=film, characters=film_characters)
 
-@app.route("/characters")
+
+# ===================== CHARACTERS (ALLE & FILTER) ===================== #
+@app.route("/characters")  # Route voor alle personages (heroes + villains)
 def all_characters():
     response = requests.get(f"{BASE_URL}/characters")
     characters = response.json() if response.status_code == 200 else []
     return render_template("characters.html", characters=characters)
 
-@app.route("/characters/<string:role>/")
+
+@app.route("/characters/<string:role>/")  # Route voor gefilterde lijst (alleen heroes of villains)
 def character_list_by_role(role):
+    # Mapping van URL-waarde naar interne rolwaarde
     role_map = {"heroes": "hero", "villains": "villain"}
     role_value = role_map.get(role)
 
+    # Als rol ongeldig is, foutmelding geven
     if not role_value:
         return "Role not found", 404
 
+    # Characters ophalen en filteren op rol
     response = requests.get(f"{BASE_URL}/characters")
     characters = response.json() if response.status_code == 200 else []
-
     filtered = [char for char in characters if char["role"] == role_value]
 
+    # Toon de gefilterde lijst
     return render_template("characters.html", characters=filtered)
 
-@app.route("/characters/<string:role>/<int:char_id>")
+
+@app.route("/characters/<string:role>/<int:char_id>")  # Detailpagina voor 1 character
 def character_detail(role, char_id):
+    # Mapping naar juiste rol
     role_map = {"heroes": "hero", "villains": "villain"}
     role_value = role_map.get(role)
 
     if not role_value:
         return "Role not found", 404
 
+    # Haal data op voor characters en films
     character_res = requests.get(f"{BASE_URL}/characters")
     movie_res = requests.get(f"{BASE_URL}/movies")
 
     characters = character_res.json() if character_res.status_code == 200 else []
     movies = movie_res.json() if movie_res.status_code == 200 else []
 
+    # Zoek het juiste character met juiste rol
     character = next((c for c in characters if c["id"] == char_id and c["role"] == role_value), None)
+
+    # Zoek bijhorende films waarin dit personage meedoet
     character_movies = [m for m in movies if m["id"] in character.get("movie_ids", [])] if character else []
 
+    # Render detailpagina voor het character
     return render_template("character_detail.html", character=character, character_movies=character_movies)
 
-@app.route("/planets")
+
+# ===================== PLANETEN ===================== #
+@app.route("/planets")  # Route voor lijst met alle planeten
 def show_planets():
     response = requests.get(f"{BASE_URL}/planets")
     planets = response.json() if response.status_code == 200 else []
     return render_template("planets.html", planets=planets)
 
-@app.route("/planets/<int:planet_id>")
+
+@app.route("/planets/<int:planet_id>")  # Detailpagina voor 1 specifieke planeet
 def planet_detail(planet_id):
     response = requests.get(f"{BASE_URL}/planets/{planet_id}")
     planet = response.json() if response.status_code == 200 else None
     return render_template("planet_detail.html", planet=planet)
 
+
+# ===================== START DE SERVER ===================== #
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)  # Debugmodus aan voor live herladen en foutopsporing
