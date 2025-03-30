@@ -316,8 +316,7 @@
       "planet": "Kylos",
       "actor": "Dave Bautista",
       "movie_ids": [
-        10,
-        15
+        10
       ],
       "image": "drax.jpg",
       "powers": [
@@ -333,8 +332,7 @@
       "planet": "Zen-Whoberi",
       "actor": "Zoe Saldaña",
       "movie_ids": [
-        10,
-        15
+        10
       ],
       "image": "gamora.jpg",
       "powers": [
@@ -377,22 +375,6 @@
         "Density manipulation",
         "Laser beam",
         "Flight"
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Ultron",
-      "role": "villain",
-      "planet": "Earth",
-      "actor": "James Spader",
-      "movie_ids": [
-        11
-      ],
-      "image": "ultron.jpg",
-      "powers": [
-        "AI intelligence",
-        "Super strength",
-        "Technopathy"
       ]
     }
   ],
