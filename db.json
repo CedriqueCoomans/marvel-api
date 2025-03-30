@@ -153,17 +153,6 @@
       "director": "Scott Derrickson",
       "box_office": "$678M",
       "runtime": "115 min"
-    },
-    {
-      "id": 15,
-      "title": "Guardians of the Galaxy Vol. 2",
-      "release_date": "2017-05-05",
-      "phase": "3",
-      "description": "The Guardians struggle to keep their newfound family together while uncovering Peter Quill’s true parentage.",
-      "image": "gotg2.jpg",
-      "director": "James Gunn",
-      "box_office": "$863M",
-      "runtime": "136 min"
     }
   ],
   "characters": [
@@ -175,9 +164,12 @@
       "actor": "Robert Downey Jr.",
       "movie_ids": [
         1,
+        2,
         3,
         6,
-        7
+        7,
+        11,
+        13
       ],
       "image": "tony_stark.jpg",
       "powers": [
@@ -195,7 +187,9 @@
       "actor": "Edward Norton",
       "movie_ids": [
         2,
-        6
+        6,
+        11,
+        13
       ],
       "image": "bruce.jpg",
       "powers": [
@@ -213,7 +207,9 @@
       "movie_ids": [
         4,
         6,
-        8
+        8,
+        11,
+        13
       ],
       "image": "chris.jpg",
       "powers": [
@@ -232,7 +228,9 @@
       "movie_ids": [
         5,
         6,
-        9
+        9,
+        11,
+        13
       ],
       "image": "steve.jpg",
       "powers": [
@@ -248,7 +246,9 @@
       "planet": "Earth",
       "actor": "Scarlett Johansson",
       "movie_ids": [
-        6
+        6,
+        11,
+        13
       ],
       "image": "natasha.jpg",
       "powers": [
@@ -266,7 +266,9 @@
       "actor": "Tom Hiddleston",
       "movie_ids": [
         4,
-        6
+        6,
+        8,
+        11
       ],
       "image": "tom.jpg",
       "powers": [
@@ -314,7 +316,8 @@
       "planet": "Kylos",
       "actor": "Dave Bautista",
       "movie_ids": [
-        10
+        10,
+        15
       ],
       "image": "drax.jpg",
       "powers": [
@@ -330,13 +333,83 @@
       "planet": "Zen-Whoberi",
       "actor": "Zoe Saldaña",
       "movie_ids": [
-        10
+        10,
+        15
       ],
       "image": "gamora.jpg",
       "powers": [
         "Assassin training",
         "Agility",
         "Swordsmanship"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Wanda Maximoff / Scarlet Witch",
+      "role": "hero",
+      "planet": "Earth",
+      "actor": "Elizabeth Olsen",
+      "movie_ids": [
+        6,
+        11,
+        13
+      ],
+      "image": "wanda.jpg",
+      "powers": [
+        "Telekinesis",
+        "Energy manipulation",
+        "Reality warping"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Vision",
+      "role": "hero",
+      "planet": "Earth",
+      "actor": "Paul Bettany",
+      "movie_ids": [
+        6,
+        11,
+        13
+      ],
+      "image": "vision.jpg",
+      "powers": [
+        "Density manipulation",
+        "Laser beam",
+        "Flight"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Ultron",
+      "role": "villain",
+      "planet": "Earth",
+      "actor": "James Spader",
+      "movie_ids": [
+        11
+      ],
+      "image": "ultron.jpg",
+      "powers": [
+        "AI intelligence",
+        "Super strength",
+        "Technopathy"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Scott Lang / Ant-Man",
+      "role": "hero",
+      "planet": "Earth",
+      "actor": "Paul Rudd",
+      "movie_ids": [
+        12,
+        13
+      ],
+      "image": "antman.jpg",
+      "powers": [
+        "Size manipulation",
+        "Enhanced strength",
+        "Insect communication"
       ]
     }
   ],
