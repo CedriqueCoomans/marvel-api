@@ -13,13 +13,12 @@
     <h1>{{ film.title }}</h1>
 
     <div class="film-detail">
-
-        {% if film.image %}
         <img src="/static/images/{{ film.image }}" alt="{{ film.title }}" class="film-image">
-        {% endif %}
-
         <p><strong>Release date:</strong> {{ film.release_date }}</p>
         <p><strong>Phase:</strong> {{ film.phase }}</p>
+        <p><strong>Duration:</strong> {{ film.runtime }}</p> <!-- correct veldnaam -->
+        <p><strong>Director:</strong> {{ film.director }}</p>
+        <p><strong>Box Office:</strong> {{ film.box_office }}</p> <!-- correct veldnaam -->
         <p><strong>Description:</strong> {{ film.description }}</p>
 
         {% if characters %}
@@ -27,18 +26,12 @@
             <h3>Characters in this movie:</h3>
             <ul>
                 {% for character in characters %}
-                {% set role = character.role|lower %}
-                {% set url_role = 'heroes' if role == 'hero' else 'villains' %}
-                <li>
-                    <a href="/characters/{{ url_role }}/{{ character.id }}">
-                        {{ character.name }}
-                    </a>
-                </li>
+                {% set url_role = 'heroes' if character.role == 'hero' else 'villains' %}
+                <li><a href="/characters/{{ url_role }}/{{ character.id }}">{{ character.name }}</a></li>
                 {% endfor %}
             </ul>
         </div>
         {% endif %}
-
     </div>
 
     <br>

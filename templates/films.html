@@ -18,8 +18,7 @@
             {% if film.image %}
             <img src="/static/images/{{ film.image }}" alt="{{ film.title }}" class="film-image">
             {% endif %}
-            <h2>{{ film.title }}</h2>
-            <a href="/films/{{ film.id }}">More info →</a>
+            <h2><a href="/films/{{ film.id }}">{{ film.title }}</a></h2>
         </div>
         {% endfor %}
     </div>

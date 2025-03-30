@@ -1,4 +1,4 @@
-/* =============== BASIS STIJL =============== */
+/* =============== ALGEMENE STIJL =============== */
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #111;
@@ -9,7 +9,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 42px;
     margin: 30px 0;
     color: #e62429;
 }
@@ -30,12 +30,10 @@ a:hover {
     left: 20px;
     background-color: #e62429;
     color: white;
-    padding: 8px 16px;
+    padding: 10px 18px;
     border-radius: 8px;
-    text-decoration: none;
     font-weight: bold;
     transition: background 0.3s ease;
-    z-index: 1000;
 }
 
 .back-home:hover {
@@ -44,7 +42,7 @@ a:hover {
 
 /* =============== HOME PAGINA =============== */
 .marvel-logo img {
-    max-width: 500px;
+    max-width: 480px;
     display: block;
     margin: 0 auto;
     border-radius: 12px;
@@ -72,6 +70,7 @@ a:hover {
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
+    font-weight: bold;
     transition: background 0.3s ease;
 }
 
@@ -79,92 +78,10 @@ a:hover {
     background: #ff3d3d;
 }
 
-/* =============== FILM OVERZICHT =============== */
-.film-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.film-card {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
-    transition: transform 0.2s ease;
-}
-
-.film-card h2 {
-    color: #e62429;
-    margin-top: 0;
-}
-
-.film-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #f1f1f1;
-    background: #e62429;
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-.film-card a:hover {
-    background: #ff3d3d;
-    transform: scale(1.02);
-}
-
-/* =============== FILM DETAIL =============== */
-.film-detail {
-    max-width: 600px;
-    margin: 30px auto;
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
-    color: #f1f1f1;
-    text-align: center;
-}
-
-.film-image {
-    max-width: 400px;
-    height: auto;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto 20px auto;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
-}
-
-.film-detail .character-list {
-    margin-top: 30px;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-}
-
-.film-detail .character-list h3 {
-    margin-bottom: 10px;
-    color: #e62429;
-}
-
-.film-detail .character-list ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.film-detail .character-list li {
-    margin-bottom: 8px;
-}
-
-.film-detail .character-list a {
-    color: #f1f1f1;
-    font-weight: bold;
-}
-
-/* =============== CHARACTER OVERZICHT =============== */
-.character-grid {
+/* =============== OVERZICHT-GRID =============== */
+.film-grid,
+.character-grid,
+.planet-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 24px;
@@ -173,34 +90,65 @@ a:hover {
     margin: 0 auto;
 }
 
-.character-card {
+/* =============== KAART STIJLEN =============== */
+.film-card,
+.character-card,
+.planet-card {
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
     transition: transform 0.2s ease;
+    text-align: center;
 }
 
-.character-card h2 {
+.film-card h2,
+.character-card h2,
+.planet-card h2 {
     color: #e62429;
-    margin-top: 0;
+    margin: 0;
+    font-size: 20px;
 }
 
-.character-card a {
+.film-card a,
+.character-card a,
+.planet-card a {
     display: inline-block;
     margin-top: 10px;
-    color: #f1f1f1;
+    color: #fff;
     background: #e62429;
     padding: 8px 14px;
     border-radius: 6px;
     font-size: 14px;
 }
 
-.character-card a:hover {
+.film-card a:hover,
+.character-card a:hover,
+.planet-card a:hover {
     background: #ff3d3d;
-    transform: scale(1.02);
+    transform: scale(1.03);
+}
+.character-overview-image {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
 }
 
+/* =============== AFBEELDINGEN IN OVERZICHTEN =============== */
+.character-overview-image,
+.film-overview-image,
+.planet-overview-image {
+    max-width: 160px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+}
+
+/* =============== FILTER MENU =============== */
 .filter-menu {
     text-align: center;
     margin-bottom: 20px;
@@ -209,7 +157,7 @@ a:hover {
 .filter-menu a {
     display: inline-block;
     margin: 0 10px;
-    padding: 10px 16px;
+    padding: 10px 18px;
     background-color: #1a1a1a;
     color: #f1f1f1;
     border-radius: 8px;
@@ -217,101 +165,15 @@ a:hover {
     transition: background 0.3s ease;
 }
 
-.filter-menu a:hover {
-    background-color: #e62429;
-    color: white;
-}
-
+.filter-menu a:hover,
 .filter-menu a.active {
     background-color: #e62429;
     color: white;
 }
 
-/* =============== CHARACTER DETAIL =============== */
-.character-movies {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-    text-align: left;
-}
-
-.character-movies h3 {
-    color: #e62429;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.character-movies ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.character-movies li {
-    margin-bottom: 8px;
-}
-
-.character-movies a {
-    color: #f1f1f1;
-    font-weight: bold;
-}
-
-.character-movies a:hover {
-    text-decoration: underline;
-} 
-.character-detail {
-    max-width: 600px;
-    margin: 40px auto;
-    background-color: #1a1a1a;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
-    text-align: center;
-    font-size: 18px;
-}
-
-.detail-image {
-    max-width: 300px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 16px rgba(255, 255, 255, 0.1);
-}
-
-/* =============== PLANET OVERZICHT =============== */
-.planet-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.planet-card {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
-    text-align: center;
-    transition: transform 0.2s ease;
-}
-
-.planet-card h2 {
-    margin: 0;
-    color: #e62429;
-}
-
-.planet-card a {
-    color: #f1f1f1;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.planet-card a:hover {
-    transform: scale(1.05);
-}
-
-/* =============== PLANET DETAIL =============== */
+/* =============== DETAILPAGINA'S =============== */
+.film-detail,
+.character-detail,
 .planet-detail {
     max-width: 600px;
     margin: 40px auto;
@@ -321,4 +183,84 @@ a:hover {
     box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
     text-align: center;
     font-size: 18px;
+}
+
+.film-image,
+.detail-image {
+    max-width: 320px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+/* =============== LIJSTEN IN DETAILS =============== */
+.character-movies,
+.character-powers,
+.film-detail .character-list {
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.character-movies h3,
+.character-powers h3,
+.film-detail .character-list h3 {
+    color: #e62429;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.character-movies ul,
+.character-powers ul,
+.film-detail .character-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.character-movies li,
+.character-powers li,
+.film-detail .character-list li {
+    margin-bottom: 8px;
+}
+
+.character-movies a,
+.film-detail .character-list a {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.powers-list {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.powers-list p {
+    color: #e62429;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.powers-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.powers-list li {
+    background-color: #e62429;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }

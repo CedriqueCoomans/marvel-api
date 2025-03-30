@@ -109,6 +109,61 @@
       "director": "James Gunn",
       "box_office": "$773M",
       "runtime": "121 min"
+    },
+    {
+      "id": 11,
+      "title": "Avengers: Age of Ultron",
+      "release_date": "2015-05-01",
+      "phase": "2",
+      "description": "The Avengers must unite once more to face Ultron, a robotic enemy bent on human extinction.",
+      "image": "age_of_ultron.jpg",
+      "director": "Joss Whedon",
+      "box_office": "$1.4B",
+      "runtime": "141 min"
+    },
+    {
+      "id": 12,
+      "title": "Ant-Man",
+      "release_date": "2015-07-17",
+      "phase": "2",
+      "description": "A thief is recruited by Dr. Hank Pym to wear a suit that allows him to shrink in size and increase in strength.",
+      "image": "antman.jpg",
+      "director": "Peyton Reed",
+      "box_office": "$519M",
+      "runtime": "117 min"
+    },
+    {
+      "id": 13,
+      "title": "Captain America: Civil War",
+      "release_date": "2016-05-06",
+      "phase": "3",
+      "description": "Political involvement in the Avengers' activities causes a rift between Captain America and Iron Man.",
+      "image": "civil_war.jpg",
+      "director": "Anthony and Joe Russo",
+      "box_office": "$1.15B",
+      "runtime": "147 min"
+    },
+    {
+      "id": 14,
+      "title": "Doctor Strange",
+      "release_date": "2016-11-04",
+      "phase": "3",
+      "description": "After a car accident, a brilliant surgeon learns the mystic arts to defend the world from magical threats.",
+      "image": "doctor_strange.jpg",
+      "director": "Scott Derrickson",
+      "box_office": "$678M",
+      "runtime": "115 min"
+    },
+    {
+      "id": 15,
+      "title": "Guardians of the Galaxy Vol. 2",
+      "release_date": "2017-05-05",
+      "phase": "3",
+      "description": "The Guardians struggle to keep their newfound family together while uncovering Peter Quill’s true parentage.",
+      "image": "gotg2.jpg",
+      "director": "James Gunn",
+      "box_office": "$863M",
+      "runtime": "136 min"
     }
   ],
   "characters": [

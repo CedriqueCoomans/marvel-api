@@ -14,10 +14,20 @@
 
     <div class="character-detail">
         <img src="/static/images/{{ character.image }}" alt="{{ character.name }}" class="detail-image">
-
         <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
         <p><strong>Planet:</strong> {{ character.planet }}</p>
         <p><strong>Actor:</strong> {{ character.actor }}</p>
+
+        {% if character.powers %}
+        <div class="powers-list">
+            <p><strong>Powers:</strong></p>
+            <ul>
+                {% for power in character.powers %}
+                <li>{{ power }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
 
         {% if character_movies %}
         <div class="character-movies">
