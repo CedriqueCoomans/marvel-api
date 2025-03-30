@@ -394,23 +394,6 @@
         "Super strength",
         "Technopathy"
       ]
-    },
-    {
-      "id": 14,
-      "name": "Scott Lang / Ant-Man",
-      "role": "hero",
-      "planet": "Earth",
-      "actor": "Paul Rudd",
-      "movie_ids": [
-        12,
-        13
-      ],
-      "image": "antman.jpg",
-      "powers": [
-        "Size manipulation",
-        "Enhanced strength",
-        "Insect communication"
-      ]
     }
   ],
   "planets": [
