@@ -358,24 +358,6 @@
         "Energy manipulation",
         "Reality warping"
       ]
-    },
-    {
-      "id": 12,
-      "name": "Vision",
-      "role": "hero",
-      "planet": "Earth",
-      "actor": "Paul Bettany",
-      "movie_ids": [
-        6,
-        11,
-        13
-      ],
-      "image": "vision.jpg",
-      "powers": [
-        "Density manipulation",
-        "Laser beam",
-        "Flight"
-      ]
     }
   ],
   "planets": [
