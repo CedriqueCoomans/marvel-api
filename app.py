@@ -6,6 +6,8 @@ app = Flask(__name__)  # Start een nieuwe Flask-applicatie
 # Basis URL van de JSON API
 BASE_URL = "https://my-json-server.typicode.com/CedriqueCoomans/marvel-api"
 
+# ======================= ROUTES =======================
+
 # Homepage
 @app.route("/")
 def home():
