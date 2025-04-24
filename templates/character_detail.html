@@ -15,7 +15,7 @@
     <div class="character-detail">
         <img src="/static/images/{{ character.image }}" alt="{{ character.name }}" class="detail-image">
         <p><strong>Role:</strong> {{ character.role | capitalize }}</p>
-        <p><strong>Planet:</strong> {{ character.planet }}</p>
+        <p><strong>Planet:</strong> {{ character.planet.name }}</p>
         <p><strong>Actor:</strong> {{ character.actor }}</p>
 
         {% if character.powers %}

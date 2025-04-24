@@ -160,7 +160,6 @@
       "id": 1,
       "name": "Tony Stark / Iron Man",
       "role": "hero",
-      "planet": "Earth",
       "actor": "Robert Downey Jr.",
       "movie_ids": [
         1,
@@ -177,13 +176,13 @@
         "Powered armor suit",
         "Flight",
         "Energy blasts"
-      ]
+      ],
+      "planet_id": 1
     },
     {
       "id": 2,
       "name": "Bruce Banner / Hulk",
       "role": "hero",
-      "planet": "Earth",
       "actor": "Edward Norton",
       "movie_ids": [
         2,
@@ -196,13 +195,13 @@
         "Super strength",
         "Invulnerability",
         "Regeneration"
-      ]
+      ],
+      "planet_id": 1
     },
     {
       "id": 3,
       "name": "Thor",
       "role": "hero",
-      "planet": "Asgard",
       "actor": "Chris Hemsworth",
       "movie_ids": [
         4,
@@ -217,13 +216,13 @@
         "Super strength",
         "Mjolnir control",
         "Flight"
-      ]
+      ],
+      "planet_id": 2
     },
     {
       "id": 4,
       "name": "Steve Rogers / Captain America",
       "role": "hero",
-      "planet": "Earth",
       "actor": "Chris Evans",
       "movie_ids": [
         5,
@@ -237,13 +236,13 @@
         "Super soldier strength",
         "Enhanced agility",
         "Shield combat"
-      ]
+      ],
+      "planet_id": 1
     },
     {
       "id": 5,
       "name": "Natasha Romanoff / Black Widow",
       "role": "hero",
-      "planet": "Earth",
       "actor": "Scarlett Johansson",
       "movie_ids": [
         6,
@@ -256,13 +255,13 @@
         "Espionage",
         "Acrobatics",
         "Weapons expert"
-      ]
+      ],
+      "planet_id": 1
     },
     {
       "id": 6,
       "name": "Loki",
       "role": "villain",
-      "planet": "Jotunheim",
       "actor": "Tom Hiddleston",
       "movie_ids": [
         4,
@@ -275,13 +274,13 @@
         "Illusion casting",
         "Magic",
         "Shape-shifting"
-      ]
+      ],
+      "planet_id": 3
     },
     {
       "id": 7,
       "name": "Red Skull",
       "role": "villain",
-      "planet": "Earth",
       "actor": "Hugo Weaving",
       "movie_ids": [
         5
@@ -291,13 +290,13 @@
         "Tactical genius",
         "Enhanced strength",
         "Use of Tesseract"
-      ]
+      ],
+      "planet_id": 1
     },
     {
       "id": 8,
       "name": "Obadiah Stane / Iron Monger",
       "role": "villain",
-      "planet": "Earth",
       "actor": "Jeff Bridges",
       "movie_ids": [
         1
@@ -307,13 +306,13 @@
         "Heavy armor",
         "Super strength",
         "Advanced weaponry"
-      ]
+      ],
+      "planet_id": 1
     },
     {
       "id": 9,
       "name": "Drax the Destroyer",
       "role": "hero",
-      "planet": "Kylos",
       "actor": "Dave Bautista",
       "movie_ids": [
         10
@@ -323,14 +322,14 @@
         "Super strength",
         "Combat skills",
         "Durability"
-      ]
+      ],
+      "planet_id": 4
     },
     {
       "id": 10,
       "name": "Gamora",
       "role": "hero",
-      "planet": "Zen-Whoberi",
-      "actor": "Zoe Saldaña",
+      "actor": "Zoe Salda\u00f1a",
       "movie_ids": [
         10
       ],
@@ -339,7 +338,8 @@
         "Assassin training",
         "Agility",
         "Swordsmanship"
-      ]
+      ],
+      "planet_id": 5
     }
   ],
   "planets": [
